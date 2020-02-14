@@ -1,0 +1,43 @@
+/* responsive gert */
+<style>
+@media screen and (min-width: 700px) {
+#LogoContainer {
+    display: none;
+    };
+#gert {
+    padding: 60% 0 0 0 !important
+    };
+};
+</style>
+<script>
+// vimeo spk TURN AUTOPLAY OFF TURN CONTROL ON ADD SCRIPT TO HEADER ADD CLASS TO IFRAME <script src="https://player.vimeo.com/api/player.js" ></script>
+Qualtrics.SurveyEngine.addOnload(function(){
+	var div = document.getElementById("gert") 
+	var iframe = document.querySelector('.iframe');
+	var player = new Vimeo.Player(iframe);
+	var that = this
+		player.on('play', function() {
+			console.log('video playing!')});
+		player.on('ended', function() {
+			console.log('video has ended!');
+			div.style.display = "none";
+			that.clickNextButton();
+		});
+		
+	});
+
+// remove continue for videos//
+Qualtrics.SurveyEngine.addOnload(function(){
+	this.hideNextButton();
+	var div = document.getElementById("gert") 
+	var iframe = document.querySelector('.iframe');
+	var player = new Vimeo.Player(iframe);
+	var that = this; 
+	player.on('ended', function() {
+		that.clickNextButton();
+		});
+	});		
+</script>
+<question>
+	<!-- add in -->
+</question>
