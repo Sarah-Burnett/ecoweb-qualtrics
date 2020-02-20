@@ -69,3 +69,39 @@ document.querySelector('button').addEventListener('click', () => {
     document.querySelector(".tooltip").style.opacity = 1;
 });
 </script>
+
+<!-- DUTCH DONE 20.02.20-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+<style type="text/css">
+p {
+    padding: 1em;
+}
+.link {
+    background-color: white; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+}
+.tooltip {
+    padding: 2px; 
+    background-color: black; 
+    color: white; 
+    opacity:0; 
+    transition: opacity 0.3s;
+}
+</style>
+<div style="color:#000000; font-size:14px; font-family:Arial,sans-serif;">
+    <p>Bedankt voor jouw interesse in ons onderzoek.</p>
+    <p>We hebben toestemming van je ouder(s)/ voogd nodig om je te laten verdergaan.</p>
+    <p>Vraag je ouder(s)/voogd om hier toestemming te geven:</p>
+    <p><span class="link">www.cutt.ly/mymoodcoach</span>
+        <button class="btn" data-clipboard-text="www.cutt.ly/mymoodcoach">Kopieren</button>
+        <span class="tooltip">Gekopieerd!</span>
+    </p>
+</div>
+<script> 
+document.querySelector('button').addEventListener('click', () => {
+    new ClipboardJS('.btn'); 
+    document.querySelector(".tooltip").style.opacity = 1;
+});
+</script>

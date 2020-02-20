@@ -38,12 +38,12 @@ function decProgressBar (){
     }
 incProgressBar();
 
-/* then call decProgressBar on q to halt progress - doesn't execute until page after*/
+// then call decProgressBar on q to halt progress - doesn't execute until page after
 decProgressBar();
 
-// OLD GLOBAL VERSION PRIOR TO USING FUNCTION
+/* OLD GLOBAL VERSION PRIOR TO USING FUNCTION
 
-/* question js for questions with no progress*/
+// question js for questions with no progress
 increment = 1;
 var pbCurrent = parseInt(Qualtrics.SurveyEngine.getEmbeddedData('pb'));
 var pbReverse = pbCurrent - increment;
@@ -52,3 +52,5 @@ Qualtrics.SurveyEngine.setEmbeddedData('pb', pbReverse);
 // question js for final page
 var pbFinal = 100;
 Qualtrics.SurveyEngine.setEmbeddeddata('pb', pbFinal);
+
+*/

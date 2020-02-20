@@ -12,7 +12,7 @@ Qualtrics.SurveyEngine.addOnload(function()
 var lidas = Qualtrics.SurveyEngine.getEmbeddedData("lidas_symptoms_0");
 console.log(lidas);
 
-// scoring gert NOPE
+/* scoring gert 
 Qualtrics.SurveyEngine.addOnUnload(function()
 {
 score = Qualtrics.SurveyEngine.getEmbeddedData('score');
@@ -24,6 +24,8 @@ if (answer==solution) {
 }
 Qualtrics.SurveyEngine.setEmbeddedData('score', score);
 });
+
+*/
 
 // remove powered by qualtrics //
 Qualtrics.SurveyEngine.addOnReady(function() {
