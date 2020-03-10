@@ -1,6 +1,7 @@
 <!-- red box on screen -->
+<!-- header -->
 <style>
-    #alert {
+#alert {
 	background: pink;
 	padding: .4em;
 	margin-bottom: 1em;
@@ -8,10 +9,12 @@
     border: solid  red 0.5px;
 	text-align: center;
 	font-size: smaller;
-}
-
+    cursor:pointer;
+    display: none
+    }
 </style>
 <div id="alert">This is an alert</div>
+<!-- question js-->
 <script>
     const alertBox = document.querySelector('#alert')
     const langAlert = {

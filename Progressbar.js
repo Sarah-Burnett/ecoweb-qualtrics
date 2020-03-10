@@ -54,3 +54,5 @@ var pbFinal = 100;
 Qualtrics.SurveyEngine.setEmbeddeddata('pb', pbFinal);
 
 */
+
+document.querySelectorAll('li').style.fontSize = "large";
