@@ -1,4 +1,4 @@
-// working script as good as gets atm
+// working script (not ie) as good as gets atm - hideous buffering off screen can still see face on video so extra time
 Qualtrics.SurveyEngine.addOnload(function(){
     console.log("stop");
     const iframe = document.querySelector('iframe');
@@ -8,13 +8,13 @@ Qualtrics.SurveyEngine.addOnload(function(){
     let timerCall = "stop"
 	const timer = () => {
 		setTimeout(() => {
-                    if (timerCall === "go") {
-                        player.getCurrentTime().then((seconds) => {
-                        console.log(seconds);
-                        previousTime = seconds;
-                        setTimeout(timer, 200);
-                    })
-                }}, 200)
+             if (timerCall === "go") {
+                player.getCurrentTime().then((seconds) => {
+                console.log(seconds);
+                previousTime = seconds;
+                 setTimeout(timer, 200);        
+                })
+            }}, 200)       
         };
 	player.on('play', () => {
         console.log('play');
@@ -63,11 +63,9 @@ Qualtrics.SurveyEngine.addOnload(function(){
 // this does not work - same origin policy
 const playBar = iframe.contentWindow.querySelector('.play-bar.rounded-box');
 	console.log(playBar);
-	// remove play bar
 	playBar.style.display = "none ! important";
 
-    // take 10000 - this does not current work as second event listener doesnt stop function
-
+// take 10000 - scope  can't set interval in one event listener callback and stop in another 
 
     
     player.on('play', () => {
@@ -108,41 +106,4 @@ const playBar = iframe.contentWindow.querySelector('.play-bar.rounded-box');
 
 });
 
-/// lets get this shit solved
-
-Qualtrics.SurveyEngine.addOnload(function(){
-    console.log("back to black");
-    const iframe = document.querySelector('iframe');
-    const player = new Vimeo.Player(iframe);
-	// prevent seeking 
-    let previousTime = 0;
-    let timerCall = "stop"
-	const timer = () => {
-		setTimeout(() => {
-                    if (timer === "go") {
-                        player.getCurrentTime().then((seconds) => {
-                        console.log(seconds);
-                        previousTime = seconds;
-                        setTimeout(timer, 200);
-                    })
-                }}, 200)
-        };
-	console.log(timer);
-	player.on('play', () => {
-        console.log('play');
-        timerCall = "go";
-        setTimeout(timer, 200);
-	});
-
- player.on('seeking', () => {
-     timerCall = "stop";
-     player.setCurrentTime(previousTime);
- });
-	
-    // click next Button
-    player.on('ended', () => {
-        this.clickNextButton();
-    });
-    //hide next Button
-    this.hideNextButton();
 
