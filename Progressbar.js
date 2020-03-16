@@ -1,27 +1,4 @@
-// PROGRESS BAR ARRAY - only executing up to third console.log ???? 
-function incProgressBar() {
-    let pbOld = parseInt(Qualtrics.SurveyEngine.getEmbeddedData('pb'));
-    if (pbOld < 98) {
-        let pbNew = pbOld +1 ;
-        Qualtrics.SurveyEngine.setEmbeddedData('pb', pbNew);
-    }
-}   
-function progressBar() { 
-    const extraQ = ["QID162"];
-    for (i = 0; i < extraQ.length; i++) {
-        let y = extraQ[i];
-        console.log(y);
-        let x = document.getElementById(y);
-        console.log(x);
-        return x;
-    }
-    console.log(x);
-    if (x === null) {
-        incProgressBar();
-        console.log(pbOld);
-    }
-};
-progressBar();
+
 
 // PROGESS BAR USING FUNCTIONS
 function incProgressBar() {
@@ -56,3 +33,27 @@ Qualtrics.SurveyEngine.setEmbeddeddata('pb', pbFinal);
 */
 
 document.querySelectorAll('li').style.fontSize = "large";
+
+// PROGRESS BAR ARRAY - only executing up to third console.log ???? 
+function incProgressBar() {
+    var pbOld = parseInt(Qualtrics.SurveyEngine.getEmbeddedData('pb'));
+    if (pbOld < 98) {
+        var pbNew = pbOld +1 ;
+        Qualtrics.SurveyEngine.setEmbeddedData('pb', pbNew);
+    }
+}   
+function progressBar() { 
+    var extraQ = ["QID162"];
+    for (i = 0; i < extraQ.length; i++) {
+        var y = extraQ[i];
+        var x = document.getElementById(y);
+        console.log(x);
+        return x;
+    }
+    console.log(x);
+    if (x === null) {
+        incProgressBar();
+        console.log(pbOld);
+    }
+};
+progressBar();

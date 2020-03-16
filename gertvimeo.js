@@ -6,8 +6,8 @@ Qualtrics.SurveyEngine.addOnload(function(){
 	// prevent seeking 
 	let previousTime = 0;
     let timerCall = "stop"
-	const timer = () => {
-		setTimeout(() => {
+	const timer = function(){
+		setTimeout( function(){
              if (timerCall === "go") {
                 player.getCurrentTime().then((seconds) => {
                 console.log(seconds);
@@ -16,7 +16,7 @@ Qualtrics.SurveyEngine.addOnload(function(){
                 })
             }}, 200)       
         };
-	player.on('play', () => {
+	player.on('play', function(){
         console.log('play');
         timerCall = "go"
         setTimeout(timer, 200);
@@ -33,8 +33,6 @@ Qualtrics.SurveyEngine.addOnload(function(){
     });
     //hide next Button
     this.hideNextButton();
-
-
 });
 
 
