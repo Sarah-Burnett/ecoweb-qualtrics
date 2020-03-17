@@ -6,6 +6,7 @@
 
 Qualtrics.SurveyEngine.addOnReady(function()
 {
+	"use strict";
 	const video = document.querySelector('video');
 	const videoHide = document.querySelector('.video-hide');
 
