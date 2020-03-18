@@ -55,3 +55,5 @@ Qualtrics.SurveyEngine.addOnload(function()
 	});
 });
 
+
+document.querySelector('#Logo').img.src = "https://exeterctu.fra1.qualtrics.com/CP/Graphic.php?IM=IM_4MVxxqxTjQe1VGZ"
