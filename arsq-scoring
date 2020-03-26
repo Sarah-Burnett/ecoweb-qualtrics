@@ -1,0 +1,51 @@
+arsq q1a	SC_aV4gcmrHDTT9pRj}
+arsq q1b rc	SC_001LmU00lRjCc8l}
+arsq q2a	SC_3FdgSo0glBDmJYV}
+arsq q2b rc	SC_d7tLmqd9iFzYcHb}
+arsq q3a	SC_3UUWzKNKHTS88nz}
+arsq q3b rc	SC_9uenVhMxrTFNIQB}
+arsq q4a	SC_1UkFgwiDnQ1qG4R}
+arsq q4b rc	SC_5mVDN6Urt9IJwm9}
+arsq q5a	SC_2mf9q2leY49BAup}
+arsq q5b rc	SC_9U2NKtOz2zKMheJ}
+arsq q6a	SC_by02QQXTG4AdepT}
+arsq q6b rc	SC_7a2jqfXwPj09qXb}
+arsq q7a	SC_3wsvByDaV5rOW8Z}
+arsq q7b rc	SC_cx9rqMwTwysotpj}
+arsq q8a	SC_3rQPRSmEASxQPhX}
+arsq q8b rc	SC_cuSGmFVu4eNFSNn}
+
+reverse score mean because i can't cope with all the brackets: 
+
+$e{
+    (
+        (
+            ( 7 - gr://SC_001LmU00lRjCc8l/Score ) * ( 7 - gr://SC_aV4gcmrHDTT9pRj/Score )
+        ) +
+        (
+            ( 7 - gr://SC_d7tLmqd9iFzYcHb/Score ) * ( 7 - gr://SC_3FdgSo0glBDmJYV/Score )
+        ) +
+        (
+            ( 7 - gr://SC_9uenVhMxrTFNIQB/Score ) * ( 7 - gr://SC_3UUWzKNKHTS88nz/Score )
+        ) +
+        (
+            ( 7 - gr://SC_5mVDN6Urt9IJwm9/Score ) * ( 7 - gr://SC_1UkFgwiDnQ1qG4R/Score )
+        ) +
+        (
+            ( 7 - gr://SC_9U2NKtOz2zKMheJ/Score ) * ( 7 - gr://SC_2mf9q2leY49BAup/Score )
+        ) +
+        (
+            ( 7 - gr://SC_7a2jqfXwPj09qXb/Score ) * ( 7 - gr://SC_by02QQXTG4AdepT/Score )
+        ) + 
+        (
+            ( 7 - gr://SC_cx9rqMwTwysotpj/Score ) * ( 7 - gr://SC_3wsvByDaV5rOW8Z/Score ) 
+        ) +
+        (
+            ( 7 - gr://SC_cuSGmFVu4eNFSNn/Score ) * ( 7 - gr://SC_3rQPRSmEASxQPhX/Score ) 
+        )
+    )
+    / 8
+}
+
+
+
