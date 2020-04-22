@@ -9,7 +9,7 @@ Qualtrics.SurveyEngine.addOnload(function()
 });
 
 // checking embedded data
-var lidas = Qualtrics.SurveyEngine.getEmbeddedData("lidas_symptoms_0");
+var lidas = Qualtrics.SurveyEngine.getEmbeddedData("lidas_symptoms_0"); // ${e://Field/...}
 console.log(lidas);
 
 /* scoring gert 
@@ -30,22 +30,14 @@ Qualtrics.SurveyEngine.setEmbeddedData('score', score);
 // remove powered by qualtrics //
 Qualtrics.SurveyEngine.addOnReady(function() {
 	jQuery('#Plug').attr('style', 'display:none !important');
+	// || .css("display", "none!important")
 });
 
-//changing emodis size//
+//changing emodis size// - this does not work affects spacing 
 Qualtrics.SurveyEngine.addOnReady(function() {
 	jQuery('span').attr('style','font-size:larger !important');
 	jQuery('li').attr('style','font-size:larger !important');
 });
-
-// alert for clicking through final pages UPDATE THIS
-var lang = "${e://Field/Q_Language}"
-if (lang = EN){
-	alert("Please ensure...")
-}
-else if (lang = DE){
-	alert ("Bitte ... ")
-}
 
 // toggle info sheet faq
 Qualtrics.SurveyEngine.addOnload(function()
@@ -54,6 +46,3 @@ Qualtrics.SurveyEngine.addOnload(function()
 		jQuery(this).next(".info").toggle();
 	});
 });
-
-
-document.querySelector('#Logo').img.src = "https://exeterctu.fra1.qualtrics.com/CP/Graphic.php?IM=IM_4MVxxqxTjQe1VGZ"

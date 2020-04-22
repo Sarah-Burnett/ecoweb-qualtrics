@@ -1,3 +1,5 @@
+//not used 
+
 //lidas scoring  move lidas embedded data to top
 Qualtrics.SurveyEngine.addOnUnload(function()
 {
