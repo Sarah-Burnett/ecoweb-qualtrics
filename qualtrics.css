@@ -1,4 +1,10 @@
-/* remove language selector */
+/* Extra styling on Qualtrics in css of look and feel - 
+    also includes individual components:
+    continuealert, copytoclipboard, ethicscontainers, gert, progressbar
+*/
+
+/* remove language selector 
+- use js to show on first page of survey */
 .LanguageSelectorContainer{
     display: none;
     };
@@ -7,28 +13,30 @@
 #LogoContainer { 
     background-color: rgb(253, 254, 255) !important;
     }
-    
-/* containers for info sheet/ data protection */
-.container {
-    margin-top: 1rem;
-    background-color:whitesmoke;
-    padding: .5rem;
-    height: 20rem;
-    overflow: scroll;
-    font-size: smaller;
+
+/* formatting issue with the continue button 
+- use with jQuery remove plug */
+#Buttons {
+    width: 80%;
 }
 
-/*play screen for video tag gert */
+/* removing excessive spacing */
+#HeaderContainer { 
+    display: none!important;
+}
 
-.video-hide {
-	position: absolute; 
-	z-index: 99; 
-	top: 0; 
-	right: 0; 
-	width: 100%; 
-	height: 100%; 
-	background: black; 
-	display: flex; 
-	align-items: center; 
-	justify-content: center
+/* make text inputs fill the whole width on larger screens */
+.InputText {
+	width: 100%;
+}
+
+/* larger centered text around the motivational images - 
+need to ensure the text is wrapped in p tag with this classname*/
+.gif {
+	text-align: center;
+	font-size: larger;
+}
+/* motivational images responsive to screen width */
+img {
+	max-width: 100% !important;
 }

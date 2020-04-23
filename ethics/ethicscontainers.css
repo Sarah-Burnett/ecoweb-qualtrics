@@ -1,0 +1,9 @@
+/* containers for info sheet/ data protection */
+.container {
+    margin-top: 1rem;
+    background-color:whitesmoke;
+    padding: .5rem;
+    height: 20rem;
+    overflow: scroll;
+    font-size: smaller;
+}

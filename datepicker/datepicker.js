@@ -1,11 +1,9 @@
-<header>
-    <!-- link to github pikaday-->
-</header>
-<script>
+// Don't forget to import the pikaday cdn into header
+
 Qualtrics.SurveyEngine.addOnload(function(){
-	var inputId = 'QR~' + this.questionId;
+	const inputId = 'QR~' + this.questionId;
    
-    var languages = {
+    const languages = {
 		"ES-ES": {
 			months:["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"],
 			weekdays: ["domingo","lunes","martes","miércoles","jueves","viernes","sábado"],
@@ -27,7 +25,7 @@ Qualtrics.SurveyEngine.addOnload(function(){
    			weekdaysShort: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat',],
 		},
 	};
-	var picker = new Pikaday(
+	const picker = new Pikaday(
 		{
 		field: document.getElementById(inputId),
 		firstDay: 1,
@@ -35,20 +33,16 @@ Qualtrics.SurveyEngine.addOnload(function(){
 		i18n: languages['${e://Field/Q_Language}'],
 		format: "DD/MM/YYYY",
 		onSelect: function(date) {
-           	var todayInSeconds = new Date().getTime();
-			var birthdayInSeconds = date.getTime();
-			var ageInSeconds = todayInSeconds - birthdayInSeconds;
-			var ageInYears = Math.floor(ageInSeconds / (1000 * 3600 * 24) / 365);
+           	const todayInSeconds = new Date().getTime();
+			const birthdayInSeconds = date.getTime();
+			const ageInSeconds = todayInSeconds - birthdayInSeconds;
+			const ageInYears = Math.floor(ageInSeconds / (1000 * 3600 * 24) / 365);
 			Qualtrics.SurveyEngine.setEmbeddedData("Age", ageInYears);
 			},
 		});
-	});
+    });
+    
 Qualtrics.SurveyEngine.addOnReady(function()
 {
 jQuery("#"+this.questionId+" .InputText:first").attr("readonly",true);
 });
-
-Qualtrics.SurveyEngine.addOnUnload(function()
-{
-});
-</script>

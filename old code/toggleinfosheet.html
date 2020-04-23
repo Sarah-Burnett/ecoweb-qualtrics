@@ -1,0 +1,88 @@
+<!-- FAQ style info page - decided against in the end. This is old version of english information sheet -->
+<script>// remove spaces between questions
+    Qualtrics.SurveyEngine.addOnReady(function() {
+        jQuery('#Plug').attr('style', 'display:none !important');
+    });
+    </script>
+    <script>    // toggle content
+       Qualtrics.SurveyEngine.addOnload(function(){
+            jQuery(".heading").click(function(){
+                jQuery(this).next(".info").toggle();
+            });
+        });
+    </script>  
+    <!--css-->
+    <style>
+    .heading {
+        margin-top: 1rem;
+        background-color:whitesmoke;
+        padding: 1rem;
+        font-weight: bold;
+    }
+    .info {
+        display:none;
+        background-color: whitesmoke;
+        padding: 1rem;
+        border-width: 1rem;
+        border-color: grey;
+    }
+    </style>
+    <b> ECoWeB Information Pages Version 0.8 Dated 19.12.19</b>
+    <div>The following information sheet has been created to tell you all about the ECoWeB trial. If you still have questions after reading it then do get it touch, our contact details are at the end of the document. There is also a box to tick to indicate you have read the information.</div>
+    <!-- info 1-->
+    <div class="heading">What is ECoWeB about?</div>
+    <div id="info1" class="info">This project aims to increase  insight into how emotions work and the skills of spotting, understanding, and managing emotions in young people. We ask young people to take part in the study over one year to find out what influences mood, how emotions change over time, and which emotional skills best increase well-being.</div>
+    <!-- info 2-->
+    <div class="heading">What will I have to do?</div>
+    <div id="info2" class="info">We ask you to complete questions about emotions, emotional skills and well-being 4 times on our website. These questions will be asked at the start of the study and then at follow-ups after 1 month, 3 months, and 12 months. We also ask you to use  a mobile health App for at least several weeks to monitor your emotions in daily life. We will offer some people self-help strategies and workouts within the App to improve their Emotional Fitness and well-being. This is so we can learn what approaches best improve well-being in young people. Who get which version of the App will be decided by chance.</div>
+    <!-- info 3-->
+    <div class="heading">What payment will I receive?</div>
+    <div id="info3" class="info">As a thank you and reward for completing the follow-up questions and for using the App, we will send Amazon vouchers or equivalent by email at 3 months and at 12 months. The value will depend on use of the App (up to £30), completing the 1, 3 and 12 month follow up questionnaires (each £10). You can therefore earn up to £60 for taking part in the study. </div>
+    <!-- info 4-->
+    <div class="heading" onclick="toggle()">Why take part and what the possible advantages of taking part?</div>
+    <div id="info4" class="info">By taking part you will play a major role in understanding well-being and mental health for young people. Taking part may help you to learn about, understand and better manage your own emotions. It will help us to improve well-being and mental health for other young people. These self-help strategies can reduce worry and boredom and improve self-confidence, optimism, motivation, and  recognition and understanding of emotions. This project will test this via an App for the first time on a large scale.  </div>
+    <!--info 5-->
+    <div class="heading">Who can take part? </div>
+    <div id="info5" class="info">Young adults aged from 16-22 years old in the UK, Spain, Germany and Belgium. We ask you to complete online questions to check if the study is likely to be right for you. If you have depression or suicidal thoughts or have ever had a diagnosis of or treatment for depression, bipolar disorder (mania) or psychosis, you cannot take part. This is because the study and the App focus on promoting well-being and preventing poor mental health rather than  treating current problems. If you can’t take part, our automated pages can direct you to other sources of help and advice. </div>
+    <!--info 6-->
+    <div class="heading">Allocation to the Self-help App </div>
+    <div id="info6" class="info">All eligible individuals are selected at chance to either continue with the App to monitor emotions (1/3) or offered additional self-help and training in the App (2/3 chance). Of those offered additional self-help, half receive strategies tailored to them based on their assessment results. The other half will receive general strategies. By comparing these groups, we will find which self-help best improves emotional skills, confidence and well-being over 12 months.</div>
+    <!--info 7-->
+    <div class="heading">How do I access the App?</div>
+    <div id="info7" class="info">If the study is likely to be right for you, we will send you a link via email to access the MyMoodCoach App on your mobile phone (iOS or Android compatible).</div>
+    <!--info 8-->
+    <div class="heading">How long do I need to use the App?</div>
+    <div id="info8" class="info">You can use the App for as long as you like.  We recommend using it most days for at least a month to get the most benefit.</div>
+    <!--info 9-->
+    <div class="heading">Do I have to take part?</div>
+    <div id="info9" class="info">No, it is up to you to decide whether or not to take part. If you agree to take part you will need to sign a consent form online. If you take part, you are free to withdraw at any time without giving a reason.</div>
+    <!--info 10-->
+    <div class="heading">Is my data confidential and private?</div>
+    <div id="info10" class="info">All information collected about you will normally be kept strictly confidential. The main exception is if in an email or a telephone call with us, you reported significant difficulties or risk of harm to yourself. In this case, we may contact your doctor (if you provide their contact details), and your parent or guardian if you are under 18 in Belgium or Germany.  If you are over 18 then only if we couldn’t reach you and were concerned would we telephone your trusted contact to try to locate you.<br><br>Your information will be kept confidential and stored securely and password protected. Your contact details (name, email, telephone number) will be kept separately from all other data. Your responses on the website and the App will be only linked to a project identification number, not with your contact details, to keep your personal responses private.</div>
+    <!--info 11-->
+    <div class="heading">Who can access  my data?</div>
+    <div id="info11" class="info">Only members of the EU funded ECoWeb consortium will have access to your data during the study. This is so they can contact you about follow-ups or to respond to your questions or requests for help. Other project researchers will only have access to the information you enter into the Website and the App. After the study ends it may be that academic journals and other research teams will ask for the data from the study to be made public (so they can carry out further research or check our findings).  The data they use will not include your name or any of your contact details.</div>
+    <!--info 12-->
+    <div class="heading">How long will my data be held?</div>
+    <div id="info12" class="info">Your contact details will be held until the end of the project (December 2021). You can also ask for your other data to be deleted at any time until this point. Your other data will be kept for 7 years for research purposes only in line with good research practice. Our data protection and privacy policy is provided with this information sheet.</div>
+    <!--info 13-->
+    <div class="heading">Research into Mood and Voice</div>
+    <div id="info13" class="info">We hope to develop new ways to detect emotions to help young people to get detect emotions in the voice to help young people to get aid quickly when needed.  Anyone in the study can take part in the voice research. The choice to take part is in the Emotion Diary in the App. In the Emotion Diary, you are asked to describe an emotional events from that day. You can type this event into the app. Or you can talk to the app to create a voice record.</div>
+    <!--info 14-->
+    <div class="heading">Voice recording</div>
+    <div id="info14" class="info">If you record your voice, it will be automatically analysed on the App. This will find sound qualities such as pitch and tone. To ensure confidentiality, each recording will be broken up into tiny bits and irreversibly scrambled beyond recognition on the app. This means that the tone of your voice can be heard but no-one can hear what you said. This is to protect your identity. The files will then be labelled with your study identity number, encrypted and sent  to a secure server for further analysis by our specialist researchers. If you use the voice recording, you will get feedback on how your voice might sound to others.<br><br> There is no passive monitoring on the App.  You have to actively choose to record your voice by clicking the record button.</div>
+    <!--info 15-->
+    <div class="heading">Do I have to record my voice?</div>
+    <div id="info15" class="info">No, this is completely optional and voluntary. You are only given the choice to record your voice when describing an emotional event.</div>
+    <!--info 16-->
+    <div class="heading">What if I want to withdraw from the study or delete my data?</div>
+    <div id="info16" class="info">You can withdraw from using the App or taking part in the study at any time without giving us a reason. If you are willing to let us still use your data that is really useful. You can request to have your data deleted at any time until the end of December 2021. If you would like your data deleted email <a href="mailto:mymoodcoach@exeter.ac.uk"mymoodcoach@exeter.ac.uk></a></div>
+    <!--info 17-->
+    <div class="heading">What are the possible disadvantages of taking part?</div>
+    <div id="info17" class="info">Taking part involves  giving your time to complete the questionnaires and use the App. Because some questions and the App ask about past and present emotions, there is a small chance that this may produce mild and brief upset if you are reminded of an unpleasant event. However, this would be no more than usually experienced in daily life. We are not aware of any other side effects, disadvantages or risks of using the App.<br></br>The ECoWeB study only offers self-monitoring and self-help. It does not provide therapy. The App is not directly monitored nor supported by clinicians or therapists. If you report increased distress or thoughts of harming yourself on our website, we will give you automated advice and point you to sources of help. You can also contact us for further advice at any time and we will (wherever possible) respond within 2 working days. Your GP (family doctor) remains responsible for your medical care. It is your responsibility to contact them for further help. </div>
+    <!--info 18-->
+    <div class="heading">What will happen to the results?</div>
+    <div id="info18" class="info">We will analyse the information received from all those taking part together at the end of the study. We aim to publish the work in academic journals. Your identity will not be revealed in any report or publication. We will publish a summary of the findings on our website. We will also send this report to all participants who request it.</div>
+    <!--info 19-->
+    <div class="heading">Who has reviewed the study?</div>
+    <div id="info19" class="info">This study has been reviewed and given a favourable opinion by the research ethic committees of the participating Universities. In the UK approval has been given by the Psychology Research Ethics Committee and the contact for this committee is Dr Nick Moberly whom you can email at <a href="mailto:n.j.moberly@exeter.ac.uk">n.j.moberly@exeter.ac.uk</a>, telephone <a href="tel:01392 724656">01392 724656</a>.<br><br>If you wish to complain about any aspect of the research you can complain to the Study Principal Investigator, Professor Edward Watkins, from the University of Exeter, UK. <a href="mailto:E.R.Watkins@exeter.ac.uk"E.R.Watkins@exeter.ac.uk></a></div>

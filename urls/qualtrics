@@ -1,0 +1,26 @@
+Navigating around Qualtrics to save excessive clicking - change the SID as appropriate:
+
+QUALTRICS EDITOR:
+
+Projects:
+https://exeterctu.eu.qualtrics.com/Q/MyProjectsSection
+
+Editor (for questions, look and feel, survey flow, survey options etc.): 
+https://exeterctu.eu.qualtrics.com/Q/EditSection/Blocks?SurveyID=SV_38EwHWrpv93qh0h
+
+Translate: 
+https://exeterctu.eu.qualtrics.com/Q/EditSection/Translate?SurveyID=SV_38EwHWrpv93qh0h
+
+Actions (for triggers and reporting): 
+https://exeterctu.eu.qualtrics.com/triggers/#/surveys/SV_38EwHWrpv93qh0h?newNav=true
+
+Data (for downloads and live look at data):
+https://exeterctu.eu.qualtrics.com/responses/#/surveys/SV_38EwHWrpv93qh0h
+
+Library (direct to CTU library to edit files):
+https://exeterctu.eu.qualtrics.com/Q/MessagesSection?ContextLibraryID=GR_5ATYN2IFHwuWtp3&LibraryID=GR_5ATYN2IFHwuWtp3
+
+
+PUBLISHED SURVEYS:
+https://exeterctu.fra1.qualtrics.com/jfe/form/SV_38EwHWrpv93qh0h
+

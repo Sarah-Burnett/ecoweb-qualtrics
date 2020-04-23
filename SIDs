@@ -1,3 +1,5 @@
+LIVE SURVEYS:
+
 ECoWeB Prescreener	SV_38EwHWrpv93qh0h
 ECoWeB Parental Consent	SV_batnVPlrW1Nk3ad
 NEW ECoWeB Baseline Assessment	SV_e4Z0ca0zXr20Rx3
@@ -8,28 +10,7 @@ ECoWeB 3 month follow up part 2	SV_515TWHXJLazCqyN
 ECoWeB 12 month follow up part 1	SV_37PFRINGahVZQgt
 ECoWeB 12 month follow up part 2	SV_74cWjjjpYTMYSGh
 
+TEST SURVEYS:
+
 SarahCopyBaseline SV_2aCTAaYukq2W7vT
 
-
-?RecipientEmail=${e://Field/RecipientEmail}&Q_Language=${e://Field/Q_Language}&reference=${e://Field/reference}
-
-
-https://exeterctu.eu.qualtrics.com/triggers/#/surveys/SV_38EwHWrpv93qh0h?newNav=true
-
-Translate: 
-https://exeterctu.eu.qualtrics.com/Q/EditSection/Translate?SurveyID=SV_e4Z0ca0zXr20Rx3
-Published: 
-https://exeterctu.fra1.qualtrics.com/jfe/form/SV_2aCTAaYukq2W7vT
-Editor: 
-https://exeterctu.eu.qualtrics.com/Q/EditSection/Blocks?SurveyID=SV_38EwHWrpv93qh0h
-Actions: 
-https://exeterctu.eu.qualtrics.com/triggers/#/surveys/SV_38EwHWrpv93qh0h?newNav=true
-Data:
-https://exeterctu.eu.qualtrics.com/responses/#/surveys/SV_38EwHWrpv93qh0h
-test survey Baseline 
-Library:
-https://exeterctu.eu.qualtrics.com/Q/MessagesSection?ContextLibraryID=GR_5ATYN2IFHwuWtp3&LibraryID=GR_5ATYN2IFHwuWtp3
-
-
-logo:
-https://exeterctu.fra1.qualtrics.com/CP/Graphic.php?IM=IM_4MVxxqxTjQe1VGZ
