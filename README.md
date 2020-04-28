@@ -1,54 +1,87 @@
-Custom code implemented into qualtrics for custom functionality and styling. 
+ECoWeB Qualtrics
+================
 
-continuealert:
-Info: Red error alert on final pages to remind participants to click through to the end
-Surveys: baseline, follow up p2
+Custom code implemented into [Qualtrics](https://exeterctu.eu.qualtrics.com/Q/MyProjectsSection) for custom functionality and styling.
+
+Full information about the folder contents below
+
+continuealert
+-------------
+Red error alert on final pages to remind participants to click through to the end  
+
+Surveys: baseline, follow up p2  
+
 Where: final page, exclusions
 
-copytoclipboard:
+copytoclipboard
+---------------
 Allows participants needing parental consent to copy the link to the parental consent survey
+
 Surveys: prescreener
+
 Where: final page for parental consent no-email
 
-datepicker:
+datepicker
+----------
 Allows participant to enter the date and then to calculate age for the exclusion
+
 Surveys: prescreener
+
 Where: date of birth
 
-emails:
+emails
+------
 HTML for all emails and reminders
+
 Where: actions and library
 
-ethics:
+ethics
+-------
 Markup and styling for information sheet and data protection 'containers'
+
 Surveys: prescreener, parental consent, baseline
+
 Where: info sheet, data protection
 
-exclusions: 
+exclusions
+----------
 HTML for baseline exclusions with all bullet points and hyperlinks
+
 Surveys: baseline
 
-followups:
+followups
+---------
 HTML for depression and risk helpsheets
+
 Surveys: follow ups
+
 Where: depression help sheet (end of p1) and risk help sheet (start of p2)
 
-gert:
-responsive videos that only play once and hide the face at beginning and end of video
+gert
+----
+Code for responsive videos that only play once and hide the face at beginning and end of video
+
 Surveys: baseline, follow up p2
+
 Where: gert
 
-prescreener:
+prescreener
+-----------
 HTML for mental health info and help with bullet points and hyperlinks. Also includes folder with the HTML for the final pages for each exclusion (e.g. age, country)
 
-progressbar:
+progressbar
+-----------
 progressbar which adds one for every 'page' to a maximum of 100 except for additonal questions
+
 Surveys: baseline, follow ups
+
 Where: header in look and feel, extra questions (e.g. lidas)
 
-urls:
+urls
+----
 the urls for all the files on qualtrics
 
-xml:
-The xml CTU results mapper (SB final version) 
+xml
+---
+Versions of the xml CTU results mapper. CTU have final version with edits to column names
 
