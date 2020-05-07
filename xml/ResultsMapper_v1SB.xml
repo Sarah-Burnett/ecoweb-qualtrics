@@ -1398,13 +1398,54 @@
 		<map>
 			<ColumnName>eda_q2</ColumnName>
 			<MapName>QID566_1</MapName>
-			<Original>{"ImportId":"QID566_1"}</Original>
+			<Original>{"ImportId":"QID566_1"}</Original> 
+		</map>
+		<map>
+			<ColumnName>eda_q2_DE</ColumnName>
+			<MapName>QID1456_1</MapName>
+			<Original>{"ImportId":"QID1456_1"}</Original>
+		</map>
+		<map>
+			<ColumnName>eda_q2_DE</ColumnName>
+			<MapName>QID1415_1</MapName>
+			<Original>{"ImportId":"QID1415_1"}</Original>
+		</map>
+		<map>
+			<ColumnName>eda_q2_DE</ColumnName>
+			<MapName>QID1423_1</MapName>
+			<Original>{"ImportId":"QID1423_1"}</Original>
+		</map>
+		<map>
+			<ColumnName>eda_q2_DE</ColumnName>
+			<MapName>QID1440_1</MapName>
+			<Original>{"ImportId":"QID1440_1"}</Original>
 		</map>
 		<map>
 			<ColumnName>eda_q3</ColumnName>
 			<MapName>QID567_1</MapName>
 			<Original>{"ImportId":"QID567_1"}</Original>
 		</map>
+		<map>
+			<ColumnName>eda_q3_DE</ColumnName>
+			<MapName>QID1457_1</MapName>
+			<Original>{"ImportId":"QID1457_1"}</Original>
+		</map>
+		<map>
+			<ColumnName>eda_q3_DE</ColumnName>
+			<MapName>QID1416_1</MapName>
+			<Original>{"ImportId":"QID1416_1"}</Original>
+		</map>
+		<map>
+			<ColumnName>eda_q3_DE</ColumnName>
+			<MapName>QID1424_1</MapName>
+			<Original>{"ImportId":"QID1424_1"}</Original>
+		</map>
+		<map>
+			<ColumnName>eda_q3_DE</ColumnName>
+			<MapName>QID1442_1</MapName>
+			<Original>{"ImportId":"QID1442_1"}</Original>
+		</map>
+		
 		<map>
 			<ColumnName>eda_q4</ColumnName>
 			<MapName>QID1439_TEXT</MapName>
