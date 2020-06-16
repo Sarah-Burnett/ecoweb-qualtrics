@@ -3254,18 +3254,36 @@
 		  <MapName>QID1438_8_TEXT</MapName>
 		  <Original>{"ImportId":"QID1438_8_TEXT"}</Original>
 		</map>
-		
 		<map>
 		  <ColumnName>covid_q1</ColumnName>
 		  <MapName>QID1453</MapName>
 		  <Original>{"ImportId":"QID1453"}</Original>
 		</map>
 		<map>
+		  <ColumnName>covid_q1</ColumnName>
+		  <MapName>QID1430</MapName>
+		  <Original>{"ImportId":"QID1430"}</Original>
+		</map>
+		<map>
+		  <ColumnName>covid_q1</ColumnName>
+		  <MapName>QID1461</MapName>
+		  <Original>{"ImportId":"QID1461"}</Original>
+		</map>
+		<map>
 		  <ColumnName>covid_q2</ColumnName>
 		  <MapName>QID1454</MapName>
 		  <Original>{"ImportId":"QID1454"}</Original>
 		</map>
-
+		<map>
+		  <ColumnName>covid_q2</ColumnName>
+		  <MapName>QID1431</MapName>
+		  <Original>{"ImportId":"QID1431"}</Original>
+		</map>
+		<map>
+		  <ColumnName>covid_q2</ColumnName>
+		  <MapName>QID1462</MapName>
+		  <Original>{"ImportId":"QID1462"}</Original>
+		</map>
     <map>
       <ColumnName>adsus_q1a</ColumnName>
       <MapName>QID1337</MapName>
