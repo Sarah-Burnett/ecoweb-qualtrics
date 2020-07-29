@@ -1,4 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+Email fields follow ups:
+QID1356_TEXT
+QID1417_TEXT
+QID1369_TEXT
+QID1432_TEXT
+QID1382_TEXT
+QID1463_TEXT
 <ResultMapper>
 	<maps>
 		<map>
@@ -53,8 +60,8 @@
 		</map>
 		<map>
 			<ColumnName>RecipientEmail</ColumnName>
-			<MapName>recipientEmail</MapName>
-			<Original>{"ImportId":"recipientEmail"}</Original>
+			<MapName>email</MapName>
+			<Original>{"ImportId":"email"}</Original>
 		</map>
 		<map>
 			<ColumnName>CurrentEmail</ColumnName>
