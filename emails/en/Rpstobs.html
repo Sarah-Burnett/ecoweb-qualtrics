@@ -1,0 +1,66 @@
+<!-- New email layout with logo banner etc. -->
+<!-- Copy and paste this into 'source' on the email -->
+<!-- Change the content inside the <div class="content"> tags -->
+<!-- Text is in the translation template at the bottom of the survey sheets -->
+<style>
+    div {
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        padding: 20px;
+    }
+    p {
+        line-height: 1.2;
+        margin: 18px 0;
+    }
+    .content {
+        padding: 20px 40px;
+    }
+    .logo{
+        text-align: center;
+        padding: 0;
+    }
+    .logo img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .footer {
+        background: #f6f6f6;
+        padding: 20px;
+        font-size: smaller;
+        color: #808080;
+        text-align: center
+    }
+</style>
+<div class="logo">
+    <img src="https://www.monsenso.com/product/email/logobar.ecoweb.png" alt="MyMoodCoach"/>
+</div>
+<div class="content">
+    <p>Dear Participant</p>
+    <p>This is a gentle reminder to please complete our website to find out if you are eligible to join the ECoWeB MyMoodCoach study.</p>
+    <p><strong>If you have not yet finished the assessment</strong>, please follow this link to see if you are eligible to join our trial:<br>${l://SurveyLink?d=Take the survey}</p>
+    <p>Or copy and paste the URL below into your internet browser: </br> ${l://SurveyURL}</p> 
+    <p><strong>If you have already completed the assessment and received your app</strong>, you do not need to do anything. Our records will automatically update. Thank you for joining our study.</p>
+    <p><strong>If you have been informed that the trial is not right for you</strong>, we are sorry that you are unable to take part and have provided information on useful sources of help at <a href="www.mymoodcoach.com">www.mymoodcoach.com</a></p>
+    <p>Thank you for your interest in our study. </p>
+    <p>All the best,</p>
+    <img src=https://www.monsenso.com/product/email/lexy.png alt="Lexy"/>
+    <p>
+        Lexy Newbold <br>
+        MyMoodCoach Team UK <br>
+        University of Exeter <br>
+        Telephone 07890 384247, email 
+        <a href="mailto:mymoodcoach@exeter.ac.uk">
+            mymoodcoach@exeter.ac.uk
+        </a><br>
+        Available Monday to Thursday from 10am to 4pm.
+    </p>
+    </div>
+<div class="footer">
+    <b>Learn about your emotions, build YOUR emotional well-being, help others & support important science with MyMoodCoach!</b>
+    <br><br>
+    ${l://OptOutLink?d=Click here} to unsubscribe
+</div>   
+
+
+
+
