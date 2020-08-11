@@ -1,0 +1,65 @@
+<!-- New email layout with logo banner etc. -->
+<!-- Copy and paste this into 'source' on the email -->
+<!-- Change the content inside the <div class="content"> tags -->
+<!-- Text is in the translation template at the bottom of the survey sheets -->
+<style>
+    div {
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        padding: 20px;
+    }
+    p {
+        line-height: 1.2;
+        margin: 18px 0;
+    }
+    .content {
+        padding: 20px 40px;
+    }
+    .logo{
+        text-align: center;
+        padding: 0;
+    }
+    .logo img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .footer {
+        background: #f6f6f6;
+        padding: 20px;
+        font-size: smaller;
+        color: #808080;
+        text-align: center
+    }
+</style>
+<div class="logo">
+    <img src="https://www.monsenso.com/product/email/logobar.ecoweb.png" alt="MyMoodCoach"/>
+</div>
+<div class="content">
+    <p>Dear&nbsp;${q://QID1366/ChoiceTextEntryValue/1},</p>
+    <p>Thank you for completing our website and joining our study.</p>
+    <p>Here is a copy of the consent form you just signed:<br />
+        <a href="https://exeterctu.eu.qualtrics.com/CP/File.php?F=F_4YP7f5sNaBy5p0p">ECoWeb Consent Form A and B UK Version 0.9 27.01.2020.docx</a><br />
+    </p>
+    <p>Look out for the email from our partners &#39;Monsenso&#39; to download your app</p>
+    <p>All the best,</p>
+    <img src=https://www.monsenso.com/product/email/lexy.png alt="Lexy"/>
+    <p>
+        Lexy Newbold <br>
+        MyMoodCoach Team UK <br>
+        University of Exeter <br>
+        Telephone 07890 384247, email 
+        <a href="mailto:mymoodcoach@exeter.ac.uk">
+            mymoodcoach@exeter.ac.uk
+        </a><br>
+        Available Monday to Thursday from 10am to 4pm.
+    </p>
+</div>
+<div class="footer">
+    <b>Learn about your emotions, build YOUR emotional well-being, help others & support important science with MyMoodCoach!</b>
+    <br><br>
+    ${l://OptOutLink?d=Click here} to unsubscribe
+</div>   
+
+
+
+
