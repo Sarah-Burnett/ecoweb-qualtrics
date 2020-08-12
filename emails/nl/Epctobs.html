@@ -1,0 +1,104 @@
+<!-- New email layout with logo banner etc. -->
+<!-- Copy and paste this into 'source' on the email -->
+<!-- Change the content inside the <div class="content"> tags -->
+<!-- Text is in the translation template at the bottom of the survey sheets -->
+<style>
+  div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 20px;
+  }
+  p {
+    line-height: 1.2;
+    margin: 18px 0;
+  }
+  .content {
+    padding: 20px 40px;
+  }
+  .logo,
+  .motivation {
+    text-align: center;
+    padding: 0;
+  }
+  .logo img,
+  .motivation img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .footer {
+    background: #f6f6f6;
+    padding: 20px;
+    font-size: smaller;
+    color: #808080;
+    text-align: center;
+  }
+</style>
+<div class="logo">
+  <img
+    src="https://exeterctu.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_eXyHnzyZ9IcAo73"
+    alt="MyMoodCoach"
+  />
+</div>
+<div class="content">
+  <p>Beste ${q://QID19/ChoiceTextEntryValue/4},</p>
+  <p>
+    Geweldig nieuws - jouw ouder/voogd, heeft toestemming gegeven voor jouw
+    deelname aan ons onderzoek indien je dit wenst. Nu is het aan jou om te
+    beslissen of je wenst deel te nemen. Als je beslist deel te nemen dan sluit
+    je je aan bij een grote groep jongeren uit 4 Europese landen. Deelnemen zal
+    ons helpen bij te leren over emoties van jongeren en wat hen helpt zich te
+    blijven goed voelen. Hieronder vind je links naar meer informatie over
+    deelname aan het onderzoek:<br />
+    <a href="https://exeterctu.eu.qualtrics.com/CP/File.php?F=F_2mKSUXu5fiS3rxP"
+      >NL_ECoWeB_Informatiebrief.docx</a
+    ><br />
+    <a href="https://exeterctu.eu.qualtrics.com/CP/File.php?F=F_0ezkgITv3WtmeHz"
+      >NL_ECoWeB_Beleid inzake gegevensbescherming.docx</a
+    ><br />
+    <a href="https://exeterctu.eu.qualtrics.com/CP/File.php?F=F_dm34PIbm9CJoHvD"
+      >NL_ECoWeB_ToestemmingsformulierDeelnemer.docx</a
+    ><br />
+  </p>
+  <p>
+    Je zal deze toestemmingsformulieren kunnen invullen wanneer je de link in de
+    e-mail opent. Er zal in twee stappen gevraagd worden om formeel je
+    toestemming te geven tot deelname.
+  </p>
+  <p>
+    De eerste stap tot deelname is het invullen van de online bevraging. Deze
+    bevraging zal ongeveer 20 à 30 minuten in beslag nemen en bestaat uit vragen
+    en oefeningen om te bepalen of deelname aan het onderzoek geschikt is voor
+    jou en hoe het nu met je gaat.
+  </p>
+  <p>
+    <b
+      >Klik op de onderstaande link om de bevraging in te vullen en te weten te
+      komen of je in aanmerking komt om deel te nemen aan ons onderzoek</b
+    ><br />${l://SurveyLink?d=Klik hier}
+  </p>
+  <p>
+    Of kopieer en plak de onderstaande URL naar jouw internet browser:<br />${l://SurveyURL}
+  </p>
+  <!-- insert nl motivation img -->
+  <p>Bedankt voor jouw interesse in ons onderzoek.</p>
+  <p>Met vriendelijke groet,</p>
+  <!-- insert nl signature img -->
+  <p>
+    Professor Johnny Fontaine<br />
+    Het Belgische ECoWeB-team <br />
+    Universiteit Gent <br />
+    e-mail
+    <a href="mailto:mymoodcoach@ugent.be "> mymoodcoach@ugent.be</a><br />
+    Hou hierbij ook rekening met de kantooruren 9u-17u.
+  </p>
+</div>
+<div class="footer">
+  <b>
+    Maak gebruik van de gratis MyMoodCoach app om meer te weten te komen over je
+    emoties. <br />
+    Bouw aan JOUW emotioneel welzijn, help anderen en ondersteun belangrijk
+    wetenschappelijk onderzoek
+  </b>
+  <br /><br />
+  ${l://OptOutLink?d=Klik hier} om je af te melden van toekomstige e-mails
+</div>

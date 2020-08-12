@@ -1,0 +1,113 @@
+<!-- New email layout with logo banner etc. -->
+<!-- Copy and paste this into 'source' on the email -->
+<!-- Change the content inside the <div class="content"> tags -->
+<!-- Text is in the translation template at the bottom of the survey sheets -->
+<style>
+  div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 20px;
+  }
+  p {
+    line-height: 1.2;
+    margin: 18px 0;
+  }
+  .content {
+    padding: 20px 40px;
+  }
+  .logo,
+  .motivation {
+    text-align: center;
+    padding: 0;
+  }
+  .logo img,
+  .motivation img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .footer {
+    background: #f6f6f6;
+    padding: 20px;
+    font-size: smaller;
+    color: #808080;
+    text-align: center;
+  }
+</style>
+<div class="logo">
+  <img
+    src="https://exeterctu.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_eXyHnzyZ9IcAo73"
+    alt="MyMoodCoach"
+  />
+</div>
+<div class="content">
+  <p>Beste&nbsp;${q://QID1366/ChoiceTextEntryValue/1},</p>
+  <p>
+    Het is 1 maand geleden dat je je deelname aan het ECoWeB onderzoek gestart
+    bent.
+  </p>
+  <p>
+    Bedankt om deel uit te maken van ons onderzoek. Het is dankzij jou dat we
+    kunnen bijleren over wat jongeren helpt zich goed te blijven voelen.
+  </p>
+  <p>
+    Als onderdeel van dit onderzoek hebben we informatie nodig over hoe het nu
+    met je gaat in vergelijking met hoe het met je ging aan het begin van je
+    deelname aan dit onderzoek. Het is erg nuttig voor ons dat je de bevraging
+    nogmaals invult opdat we beter zouden kunnen begrijpen hoe emoties
+    veranderen en wat helpt om welzijn te verbeteren. Bedankt voor jouw
+    waardevolle bijdrage.
+  </p>
+  <p>
+    Je krijgt aan het einde van de bevraging ook de mogelijkheid om ons te
+    vertellen wat je wel en niet leuk vond.
+  </p>
+  <p>
+    Door de beide delen van de bevraging in te vullen kom je in aanmerking voor
+    een beloning van 10 euro. Je zal kort na het invullen van de
+    opvolgingsmetingen aan 3 maand en aan 12 maand instructies ontvangen via
+    email of tekstbericht over hoe je de verdiende beloningen via de app en via
+    het invullen van de opvolgingsmetingen kan verkrijgen.
+  </p>
+  <p><strong>Hier vind je de weblinks naar de bevraging:</strong></p>
+  <p>
+    <a
+      href="https://exeterctu.fra1.qualtrics.com/jfe/form/SV_3dDywkTrFXREL6R?RecipientEmail=${q://QID1366/ChoiceTextEntryValue/5}&Q_Language=${e://Field/Q_Language}"
+      >Klik hier</a
+    >
+  </p>
+  <p>
+    De opvolgingsmeting bestaat uit twee delen. Het eerste deel wordt
+    automatisch gevolgd door het tweede deel, maar in het geval dat je
+    halverwege dient te stoppen en wil terugkeren om de rest in te vullen, vind
+    je hier de weblinks:
+  </p>
+  <p>
+    Deel 1:<br />
+    https://exeterctu.fra1.qualtrics.com/jfe/form/SV_3dDywkTrFXREL6R?RecipientEmail=${q://QID1366/ChoiceTextEntryValue/5}&Q_Language=${e://Field/Q_Language}
+  </p>
+  <p>
+    Deel 2:<br />
+    https://exeterctu.fra1.qualtrics.com/jfe/form/SV_9uCePFVO6s0H7Fz?RecipientEmail=${q://QID1366/ChoiceTextEntryValue/5}&Q_Language=${e://Field/Q_Language}
+  </p>
+  <!-- insert nl motivation img -->
+  <p>Met vriendelijke groet,</p>
+  <!-- insert nl signature img -->
+  <p>
+    Professor Johnny Fontaine<br />
+    Het Belgische ECoWeB-team <br />
+    Universiteit Gent <br />
+    e-mail
+    <a href="mailto:mymoodcoach@ugent.be "> mymoodcoach@ugent.be</a><br />
+    Hou hierbij ook rekening met de kantooruren 9u-17u.
+  </p>
+</div>
+<div class="footer">
+  <b>
+    Maak gebruik van de gratis MyMoodCoach app om meer te weten te komen over je
+    emoties. <br />
+    Bouw aan JOUW emotioneel welzijn, help anderen en ondersteun belangrijk
+    wetenschappelijk onderzoek
+  </b>
+  <br /><br />
+  ${l://OptOutLink?d=Klik hier} om je af te melden van toekomstige e-mails
+</div>
