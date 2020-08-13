@@ -1,9 +1,8 @@
 // Don't forget to import the pikaday cdn into header
 
 Qualtrics.SurveyEngine.addOnload(function(){
-	const inputId = 'QR~' + this.questionId;
-   
-    const languages = {
+	var inputId = 'QR~' + this.questionId;
+    var languages = {
 		"ES-ES": {
 			months:["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"],
 			weekdays: ["domingo","lunes","martes","miércoles","jueves","viernes","sábado"],
@@ -25,7 +24,7 @@ Qualtrics.SurveyEngine.addOnload(function(){
    			weekdaysShort: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat',],
 		},
 	};
-	const picker = new Pikaday(
+	new Pikaday(
 		{
 		field: document.getElementById(inputId),
 		firstDay: 1,
@@ -44,5 +43,5 @@ Qualtrics.SurveyEngine.addOnload(function(){
     
 Qualtrics.SurveyEngine.addOnReady(function()
 {
-jQuery("#"+this.questionId+" .InputText:first").attr("readonly",true);
+	jQuery("#"+this.questionId+" .InputText:first").attr("readonly",true);
 });
