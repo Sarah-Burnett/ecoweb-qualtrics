@@ -1,0 +1,68 @@
+<!-- New email layout with logo banner etc. -->
+<!-- Copy and paste this into 'source' on the email -->
+<!-- Change the content inside the <div class="content"> tags -->
+<!-- Text is in the translation template at the bottom of the survey sheets -->
+  <style>
+    div {
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+    p {
+        line-height: 1.2;
+        margin: 2vh 4vw;
+    }
+    .content {
+      padding: 1vh 0;
+    }
+    .logo, .motivation{
+        text-align: center;
+    }
+    .logo img, .motivation img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .footer {
+        background: #f6f6f6;
+        padding: 4vh;
+        font-size: smaller;
+        color: #808080;
+        text-align: center;
+    }
+  </style>
+  <div class="logo">
+    <img
+      src="https://exeterctu.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_eXyHnzyZ9IcAo73"
+      alt="MyMoodCoach"
+    />
+  </div>
+  <div class="content">
+    <p>Querido participante,</p>
+    <p>Este correo ha sido enviado cuando estás a punto de dar tu consentimiento para participar en la evaluación del estudio ECoWeB. A continuación puedes encontrar información útil sobre la participación en el estudio:<br />
+        <a href="https://exeterctu.eu.qualtrics.com/CP/File.php?F=F_9nVKhLfArpKDugR">ES_ECoWeB Hoja Informativa.docx</a><br />
+        <a href="https://exeterctu.eu.qualtrics.com/CP/File.php?F=F_7TLs17Ob23Rtna5">ES_ECoWeb_Pol&iacute;tica de Privacidad y Protecci&oacute;n de Datos Personales .docx</a><br />
+        <a href="https://exeterctu.eu.qualtrics.com/CP/File.php?F=F_7OQOuj1TGgyEfUF">ES_ECoWeB Formulario de Consentimiento.docx</a><br />
+    </p>
+    <p><strong>Si aún no has terminado la evaluación</strong>, sigue este enlace para ver si puedes participar de nuestro estudio:<br/>${l://SurveyLink?d=Haz clic aquí para responder a la evaluación}</p>
+    <p>O copia y pega la URL que verás a continuación en tu navegador:<br />${l://SurveyURL}</p>
+    <p><strong>Si ya completaste la evaluación y recibiste el acceso a la aplicación</strong>, no necesitas hacer nada más al respecto, nuestros registros se actualizarán. Gracias por participar en nuestro estudio.</p>
+    <p><strong>Si después de recibir este correo electrónico se te ha informado que este estudio no es adecuado para ti</strong>, lamentamos que no puedas participar. Tienes información sobre fuentes útiles de ayuda en nuestro sitio web, en <a href="http://www.mymoodcoach.com" target="_blank">www.mymoodcoach.com</a></p>
+    <!-- insert es motivation img -->
+    <p>Gracias por tu interés en nuestro estudio. <br>
+    <p>Saludos cordiales,</p>
+   <!-- insert es signature img -->
+   <p>
+    Azucena García-Palacios<br />
+    El equipo de ECoWeB<br />
+    Universidad Jaume I de Castellón<br />
+    correo electrónico <a href="mailto:mymoodcoach@uji.es"> mymoodcoach@uji.es</a><br />
+    Available Monday to Thursday from 10am to 4pm.
+  </p>
+  </div>
+  <div class="footer">
+    <b>
+    Utiliza la aplicación gratuita MyMoodCoach para aprender sobre tus emociones! <br>
+    ¡Construye TU bienestar emocional, ayuda a otros y apoya a la ciencia!
+    </b>
+    <br /><br />
+    ${l://OptOutLink?d=haga clic aquí} para dejar de recibir emails en el futuro
+  </div>

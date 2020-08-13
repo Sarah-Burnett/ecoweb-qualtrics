@@ -1,0 +1,71 @@
+<!-- New email layout with logo banner etc. -->
+<!-- Copy and paste this into 'source' on the email -->
+<!-- Change the content inside the <div class="content"> tags -->
+<!-- Text is in the translation template at the bottom of the survey sheets -->
+<style>
+  div {
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 12px;
+  }
+  p {
+      line-height: 1.2;
+      margin: 2vh 4vw;
+  }
+  .content {
+    padding: 1vh 0;
+  }
+  .logo, .motivation{
+      text-align: center;
+  }
+  .logo img, .motivation img {
+      max-width: 100%;
+      max-height: 100%;
+  }
+  .footer {
+      background: #f6f6f6;
+      padding: 4vh;
+      font-size: smaller;
+      color: #808080;
+      text-align: center;
+  }
+</style>
+<div class="logo">
+  <img
+    src="https://exeterctu.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_eXyHnzyZ9IcAo73"
+    alt="MyMoodCoach"
+  />
+</div>
+<div class="content">
+  <p>Querido/a&nbsp;${q://QID1366/ChoiceTextEntryValue/1},</p>
+  <p>Este es un amable recordatorio para que completes nuestra evaluación de seguimiento y así saber cómo te ha ido con la aplicación. </p>
+  <p>Entendemos que probablemente hayas estado ocupado con otras cosas, así que puede que aún no hayas tenido tiempo de ayudarnos con la evaluación. Si pudieras completar al menos la primera parte de la evaluación, sería de gran ayuda.</p>
+  <p>Gracias por ser parte de nuestro estudio de investigación. Gracias a ti podemos aprender más sobre lo que ayuda a los jóvenes a sentirse bien.</p>
+  <p>Como parte de esta investigación necesitamos saber cómo te sientes ahora en comparación con cómo te sentías al principio del estudio. Completar la evaluación de nuevo nos ayudará a entender cómo cambian las emociones y qué ayuda a mejorar el bienestar. Gracias por tu valiosa ayuda También tendrás la oportunidad de decirnos lo que te gustó y lo que no te gustó al final de la evaluación.</p>
+  <p>Al completar las dos partes de la evaluación, recibirás una compensación de 10 euros. Se te enviarán por correo electrónico o por mensaje de texto instrucciones sobre cómo reclamar tus recompensas ganadas en la App y  después de que completes tus encuestas de seguimiento de 3 y 12 meses.</p>
+  <p><strong>Aquí están los enlaces a la evaluación:</strong></p>
+  <p><a href="https://exeterctu.fra1.qualtrics.com/jfe/form/SV_5uys7gUT7kBeo7z?RecipientEmail=${q://QID1366/ChoiceTextEntryValue/5}&Q_Language=${e://Field/Q_Language}">Haz clic aquí para responder la evaluación</a></p>
+  <p>La evaluación de seguimiento consta de dos partes. La primera parte te llevará a la segunda, pero en caso de que necesites detenerte en una parte y regresar para completar el resto, aquí están los enlaces:</p>
+  <p>Parte 1:<br />
+  https://exeterctu.fra1.qualtrics.com/jfe/form/SV_5uys7gUT7kBeo7z?RecipientEmail=${q://QID1366/ChoiceTextEntryValue/5}&Q_Language=${e://Field/Q_Language}</p>
+  <p>Parte 2:<br />
+  https://exeterctu.fra1.qualtrics.com/jfe/form/SV_515TWHXJLazCqyN?RecipientEmail=${q://QID1366/ChoiceTextEntryValue/5}&Q_Language=${e://Field/Q_Language}</p>
+  <!-- insert es motivation img -->
+  <p>Saludos cordiales,</p>
+   <!-- insert es signature img -->
+
+   <p>
+    Azucena García-Palacios<br />
+    El equipo de ECoWeB<br />
+    Universidad Jaume I de Castellón<br />
+    correo electrónico <a href="mailto:mymoodcoach@uji.es"> mymoodcoach@uji.es</a><br />
+    Available Monday to Thursday from 10am to 4pm.
+  </p>
+</div>
+<div class="footer">
+  <b>
+    Utiliza la aplicación gratuita MyMoodCoach para aprender sobre tus emociones! <br>
+  ¡Construye TU bienestar emocional, ayuda a otros y apoya a la ciencia!
+  </b>
+  <br /><br />
+  ${l://OptOutLink?d=haga clic aquí} para dejar de recibir emails en el futuro
+</div>

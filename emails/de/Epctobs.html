@@ -1,0 +1,72 @@
+<!-- New email layout with logo banner etc. -->
+<!-- Copy and paste this into 'source' on the email -->
+<!-- Change the content inside the <div class="content"> tags -->
+<!-- Text is in the translation template at the bottom of the survey sheets -->
+<style>
+  div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+  p {
+    line-height: 1.2;
+    margin: 2vh 4vw;
+  }
+  .content {
+    padding: 1vh 0;
+  }
+  .logo,
+  .motivation {
+    text-align: center;
+  }
+  .logo img,
+  .motivation img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .footer {
+    background: #f6f6f6;
+    padding: 4vh;
+    font-size: smaller;
+    color: #808080;
+    text-align: center;
+  }
+</style>
+<div class="logo">
+  <img
+    src="https://exeterctu.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_eXyHnzyZ9IcAo73"
+    alt="MyMoodCoach"
+  />
+</div>
+<div class="content">
+  <p>Liebe/r ${q://QID19/ChoiceTextEntryValue/4},</p>
+  <p>Tolle Nachrichten - deine Eltern/Erziehungsberechtigten haben zugestimmt, dass du an unserer Studie teilnehmen darfst. Jetzt liegt es an dir zu entscheiden, ob du das tatsächlich möchtest. Wenn du teilnimmst, wirst du Teil einer großen Gruppe junger Menschen aus 4 Ländern Europas. Deine Teilnahme wird uns dabei helfen, die Emotionen junger Menschen besser zu verstehen und herauszufinden, was ihnen hilft, gesund zu bleiben. Nachfolgend findest du Links zu mehr Informationen über die Studienteilnahme:</br>
+      <a href="https://exeterctu.fra1.qualtrics.com/CP/File.php?F=F_4YhUlOyMTIfAHNX" target="_blank">DE_ECoWeB Studieninformationen.docx</a><br />
+      <a href="https://exeterctu.eu.qualtrics.com/CP/File.php?F=F_0c6WuwneLofvpUF">DE_ECoWeB_Zusammenfassung_Datenschutz.docx</a><br />
+      <a href="https://exeterctu.fra1.qualtrics.com/CP/File.php?F=F_0Gtljuas8H3gv8p" target="_blank">DE_ECoWeB Zustimmungsform.docx</a></p>
+      <a href="https://exeterctu.eu.qualtrics.com/CP/File.php?F=F_5p4MC31XV4eEneR">DE_ECoWeB_Eltern.docx</a></p>
+  </p>
+  <p>Die Testung zur Teilnahme dauert ca. 20/30 Minuten und besteht aus Fragen und Übungen, um zu sehen, ob die Studie für dich geeignet ist und wie es dir gerade geht.</p>
+  <p>Folge diesem Link, um die Testung abzuschließen und festzustellen, ob du zur Teilhahme an unserer Studie geeignet bist.<br/>${l://SurveyLink?d=Klicke hier}</p>
+  <p>Oder kopiere die untenstehende URL und füge sie in deinen Internetbrowser ein:<br />${l://SurveyURL}</p>
+   <!-- insert de motivation img -->
+  <p>Vielen Dank für dein Interesse an unserer Studie.</p> 
+  <p>Mit freundlichen Grüßen,</p>
+  <!-- insert de signature img -->
+
+  <p>
+    Maria Voß<br />
+    Das ECoWeB Team <br />
+    Ludwig-Maximilians-Universität München<br />
+    Telefon <a href="tel:089-2180 5619">089-2180 5619</a>, E-Mail
+    <a href="mailto:mymoodcoach@psy.lmu.de">mymoodcoach@psy.lmu.de</a><br />
+  </p>
+</div>
+<div class="footer">
+  <b>
+    Teste die kostenlose MyMoodCoach App - und mach mit bei der ECoWeB Studie!
+    <br />
+    Lerne deine Emotionen kennen, hilf anderen und der Wissenschaft!
+  </b>
+  <br /><br />
+  ${l://OptOutLink?d=Klicke hier}, um keine zukünftigen E-Mails zu erhalten
+</div>
