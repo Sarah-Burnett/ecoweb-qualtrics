@@ -6,18 +6,16 @@
   div {
       font-family:Arial, Helvetica, sans-serif;
       font-size: 12px;
-      padding: 20px;
   }
   p {
       line-height: 1.2;
-      margin: 18px 0;
+      margin: 2vh 4vw;
   }
   .content {
-      padding: 20px 40px;
+    padding: 1vh 0;
   }
   .logo, .motivation{
       text-align: center;
-      padding: 0;
   }
   .logo img, .motivation img {
       max-width: 100%;
@@ -25,10 +23,10 @@
   }
   .footer {
       background: #f6f6f6;
-      padding: 20px;
+      padding: 2vh;
       font-size: smaller;
       color: #808080;
-      text-align: center
+      text-align: center;
   }
 </style>
 <div class="logo">
@@ -39,14 +37,29 @@
 </div>
 <div class="content">
   <!-- copy in content from old emails up to sign off-->
+  <p>Dear&nbsp;${q://QID1366/ChoiceTextEntryValue/1},</p>
+  <p>Thank you for completing our website and joining our study.</p>
+  <p>
+    Here is a copy of the consent form you just signed:<br />
+    <a href="https://exeterctu.eu.qualtrics.com/CP/File.php?F=F_4YP7f5sNaBy5p0p"
+      >ECoWeb Consent Form A and B UK Version 0.9 27.01.2020.docx</a
+    ><br />
+  </p>
+  <p>
+    Look out for the email from our partners &#39;Monsenso&#39; to download your
+    app
+  </p>
+  <!-- delete above -->
   <p class="motivation">    
     <img src="https://exeterctu.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_dcoQJeUiQIRjsSV" width="500" alt="Lexy"/>
   </p>
   <p>All the best,</p>
-  <img
-    src="https://exeterctu.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_3QtbWGJC2wAzmRv"
-    alt="Lexy"
-  />
+  <p>
+    <img
+      src="https://exeterctu.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_3QtbWGJC2wAzmRv"
+      alt="Lexy"
+    />
+  </p>
   <p>
     Lexy Newbold <br />
     MyMoodCoach Team UK <br />
@@ -57,10 +70,13 @@
   </p>
 </div>
 <div class="footer">
-  <b>
-    Learn about your emotions, build YOUR emotional well-being, help others &
-    support important science with MyMoodCoach!
-  </b>
-  <br /><br />
-  ${l://OptOutLink?d=Click here} to unsubscribe
+  <p>
+    <b>
+      Learn about your emotions, build YOUR emotional well-being, help others &
+      support important science with MyMoodCoach!
+    </b>
+  </p>
+  <p>
+    ${l://OptOutLink?d=Click here} to unsubscribe
+  </p>
 </div>
