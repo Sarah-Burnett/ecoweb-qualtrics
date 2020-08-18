@@ -1,11 +1,11 @@
 /* in css of look and feel */
 
 #alert {
-	background: #d13a34;
-	padding: .7em;
-	margin-bottom: 1em;
-    color: #ffffff;
-	font-size: smaller;
-    cursor: pointer;
-    display: none;
+  background: #d13a34;
+  padding: 0.7em;
+  margin-bottom: 1em;
+  color: #ffffff;
+  font-size: smaller;
+  cursor: pointer;
+  display: none;
 }

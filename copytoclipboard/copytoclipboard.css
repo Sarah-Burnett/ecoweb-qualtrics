@@ -1,18 +1,18 @@
 /* in css of look and feel */
 
 p {
-    padding: 1em;
+  padding: 1em;
 }
 .link {
-    background-color: white; 
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 5px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
 }
 .tooltip {
-    padding: 2px; 
-    background-color: black; 
-    color: white; 
-    opacity:0; 
-    transition: opacity 0.3s;
+  padding: 2px;
+  background-color: black;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s;
 }

@@ -5,24 +5,24 @@
 
 /* remove language selector 
 - use js to show on first page of survey */
-.LanguageSelectorContainer{
-    display: none;
-    };
-    
+.LanguageSelectorContainer {
+	display: none;
+}
+
 /* white logo container */
-#LogoContainer { 
-    background-color: rgb(253, 254, 255) !important;
-    }
+#LogoContainer {
+	background-color: rgb(253, 254, 255) !important;
+}
 
 /* formatting issue with the continue button 
 - use with jQuery remove plug */
 #Buttons {
-    width: 80%;
+	width: 80%;
 }
 
 /* removing excessive spacing */
-#HeaderContainer { 
-    display: none!important;
+#HeaderContainer {
+	display: none !important;
 }
 
 /* make text inputs fill the whole width on larger screens */
