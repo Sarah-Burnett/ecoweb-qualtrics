@@ -10,10 +10,10 @@ Qualtrics.SurveyEngine.addOnload(function () {
     "ES-ES":
       "Por favor, asegúrate de hacer clic en 'continuar' al final de la página para enviarnos tus respuestas. Gracias.",
   };
-  document.querySelector("#alert-text").innerHTML =
+  alertBox.innerHTML =
     langAlert["${e://Field/Q_Language}"];
   alertBox.style.display = "block";
   alertBox.addEventListener("click", function () {
-    alertBox.style.display = "flex";
+    alertBox.style.display = "none";
   });
 });
