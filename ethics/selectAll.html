@@ -1,0 +1,52 @@
+<script>
+	Qualtrics.SurveyEngine.addOnload(function () {
+		var selectText = {
+			EN: ["Select all", "Unselect all"],
+			NL: ["Selecteer alles", "Deselecteer alles"],
+			"ES-ES": ["Seleccionar todo", "Deselecciona todo"],
+			DE: ["Wählen Sie Alle", "Alles wiederufen"],
+		};
+		var isAllSelected = false;
+		var selectBtn = document.querySelector("#selectBtn");
+
+		selectBtn.textContent = selectText["${e://Field/Q_Language}"][0];
+
+		selectBtn.onclick = function () {
+			document
+				.querySelectorAll(".MultipleAnswer")
+				.forEach((node) => node.classList.toggle("q-checked"));
+			isAllSelected = !isAllSelected;
+			isAllSelected
+				? (selectBtn.textContent = selectText["${e://Field/Q_Language}"][1])
+				: (selectBtn.textContent = selectText["${e://Field/Q_Language}"][0]);
+		};
+	});
+</script>
+<style>
+	#selectBtn {
+		border: none;
+		padding: 8px 20px;
+		border-radius: 3px;
+		font-size: 14px;
+		cursor: pointer;
+		text-align: center;
+		background: #569dd6;
+		display: inline;
+		float: right;
+		transition: all 0.3s;
+		margin: 1em 0;
+	}
+
+	@media (max-width: 480px) {
+		#selectBtn {
+			font-size: 12px;
+		}
+	}
+
+	#selectBtn:hover {
+		background: #4191d1;
+	}
+</style>
+
+<!-- make sure within div or whatever -->
+<button id="selectBtn">Button</button>
