@@ -1,111 +1,116 @@
 <!-- New email layout with logo banner etc. -->
 <!-- Copy and paste this into 'source' on the email -->
-<!-- Change the content inside the <div class="content"> tags -->
+<!-- Change the content inside the <div class="content" style="font-family:Arial, sans-serif; font-size:12px;"> tags -->
 <!-- Text is in the translation template at the bottom of the survey sheets -->
 <style>
-  div {
-      font-family:Arial, Helvetica, sans-serif;
-      font-size: 12px;
-  }
-  p {
-      line-height: 1.2;
-      margin: 2vh 4vw;
-  }
-  .content {
-    padding: 1vh 0;
-  }
-  .logo, .motivation{
-      text-align: center;
-  }
-  .logo img, .motivation img {
-      max-width: 100%;
-      max-height: 100%;
-  }
-  .signature {
-    margin-left: 4vw;
-  }
-  .footer {
-      background: #f6f6f6;
-      padding: 4vh;
-      font-size: smaller;
-      color: #808080;
-      text-align: center;
-  }
+	div {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+	}
+	p {
+		line-height: 1.2;
+		margin: 2vh 4vw;
+	}
+	.content {
+		padding: 1vh 0;
+	}
+	.logo,
+	.motivation {
+		text-align: center;
+	}
+	.logo img,
+	.motivation img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+	.signature {
+		margin-left: 4vw;
+	}
+	.footer {
+		background: #f6f6f6;
+		padding: 4vh;
+		font-size: smaller;
+		color: #808080;
+		text-align: center;
+	}
 </style>
 <div class="logo">
-  <img
-    src="https://exeterctu.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_eXyHnzyZ9IcAo73"
-    alt="MyMoodCoach"
-  />
+	<img
+		src="https://exeterctu.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_eXyHnzyZ9IcAo73"
+		alt="MyMoodCoach"
+	/>
 </div>
-<div class="content">
-  <p>Dear&nbsp;${q://QID1366/ChoiceTextEntryValue/1},</p>
-  <p>
-    It has been 1 month&nbsp;since you joined the ECoWeB study.Thank you for
-    being part of our research study. It’s thanks to you that we can learn more
-    about what helps young people stay well.
-  </p>
-  <p>
-    As part of this research we need to know how you are doing now compared to
-    how you were at the start of the study. Completing the survey again will
-    really help us understand how emotions change and what helps to improve
-    well-being. Thank you for your valuable help.
-  </p>
-  <p>
-    You also have the opportunity to tell us what you liked and didn’t like at
-    the end of the survey.
-  </p>
-  <p>
-    On completion of both parts of the survey you will be eligible for a £10
-    reward. You will be emailed or texted instructions on how to claim your
-    rewards earnt on the App and from completing your follow up surveys shortly
-    after you complete your 3 and 12 month follow up surveys.
-  </p>
-  <p><strong>Here are the links to the survey:</strong></p>
-  <p>
-    <a
-      href="https://exeterctu.fra1.qualtrics.com/jfe/form/SV_3dDywkTrFXREL6R?RecipientEmail=${q://QID1366/ChoiceTextEntryValue/5}&Q_Language=${e://Field/Q_Language}"
-      >Take the survey
-    </a>
-  </p>
-  <p>
-    The follow-up survey is in two parts. The first part will lead onto the
-    second part but in case you need to stop part way through and return to
-    complete the rest, here are the links:
-  </p>
-  <p>
-    Part 1:<br />
-    https://exeterctu.fra1.qualtrics.com/jfe/form/SV_3dDywkTrFXREL6R?RecipientEmail=${q://QID1366/ChoiceTextEntryValue/5}&Q_Language=${e://Field/Q_Language}
-  </p>
-  <p>
-    Part 2:<br />
-    https://exeterctu.fra1.qualtrics.com/jfe/form/SV_9uCePFVO6s0H7Fz?RecipientEmail=${q://QID1366/ChoiceTextEntryValue/5}&Q_Language=${e://Field/Q_Language}
-  </p>
-  <p class="motivation">    
-    <img src="https://exeterctu.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_dcoQJeUiQIRjsSV" width="500" alt="Lexy"/>
-  </p>
-  <p>All the best,</p>
-  <img
-    src="https://exeterctu.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_3QtbWGJC2wAzmRv"
-    alt="Lexy"
-    class="signature"  
-  />
-  <p>
-    Lexy Newbold <br />
-    MyMoodCoach Team UK <br />
-    University of Exeter <br />
-    Telephone 07890 384247, email
-    <a href="mailto:mymoodcoach@exeter.ac.uk">
-      mymoodcoach@exeter.ac.uk </a
-    ><br />
-    Available Monday to Thursday from 10am to 4pm.
-  </p>
+<div class="content" style="font-family: Arial, sans-serif; font-size: 12px">
+	<p>Dear&nbsp;${q://QID1366/ChoiceTextEntryValue/1},</p>
+	<p>
+		It has been 1 month&nbsp;since you joined the ECoWeB study.Thank you for
+		being part of our research study. It’s thanks to you that we can learn more
+		about what helps young people stay well.
+	</p>
+	<p>
+		As part of this research we need to know how you are doing now compared to
+		how you were at the start of the study. Completing the survey again will
+		really help us understand how emotions change and what helps to improve
+		well-being. Thank you for your valuable help.
+	</p>
+	<p>
+		You also have the opportunity to tell us what you liked and didn’t like at
+		the end of the survey.
+	</p>
+	<p>
+		On completion of both parts of the survey you will be eligible for a £10
+		reward. You will be emailed or texted instructions on how to claim your
+		rewards earnt on the App and from completing your follow up surveys shortly
+		after you complete your 3 and 12 month follow up surveys.
+	</p>
+	<p><strong>Here are the links to the survey:</strong></p>
+	<p>
+		<a
+			href="https://exeterctu.fra1.qualtrics.com/jfe/form/SV_3dDywkTrFXREL6R?RecipientEmail=${q://QID1366/ChoiceTextEntryValue/5}&Q_Language=${e://Field/Q_Language}"
+			>Take the survey
+		</a>
+	</p>
+	<p>
+		The follow-up survey is in two parts. The first part will lead onto the
+		second part but in case you need to stop part way through and return to
+		complete the rest, here are the links:
+	</p>
+	<p>
+		Part 1:<br />
+		https://exeterctu.fra1.qualtrics.com/jfe/form/SV_3dDywkTrFXREL6R?RecipientEmail=${q://QID1366/ChoiceTextEntryValue/5}&Q_Language=${e://Field/Q_Language}
+	</p>
+	<p>
+		Part 2:<br />
+		https://exeterctu.fra1.qualtrics.com/jfe/form/SV_9uCePFVO6s0H7Fz?RecipientEmail=${q://QID1366/ChoiceTextEntryValue/5}&Q_Language=${e://Field/Q_Language}
+	</p>
+	<p class="motivation">
+		<img
+			src="https://exeterctu.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_dcoQJeUiQIRjsSV"
+			width="500"
+			alt="Lexy"
+		/>
+	</p>
+	<p>All the best,</p>
+	<img
+		src="https://exeterctu.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_3QtbWGJC2wAzmRv"
+		alt="Lexy"
+		class="signature"
+	/>
+	<p>
+		Lexy Newbold <br />
+		MyMoodCoach Team UK <br />
+		University of Exeter <br />
+		Telephone 07890 384247, email
+		<a href="mailto:mymoodcoach@exeter.ac.uk"> mymoodcoach@exeter.ac.uk </a
+		><br />
+		Available Monday to Thursday from 10am to 4pm.
+	</p>
 </div>
 <div class="footer">
-  <b>
-    Learn about your emotions, build YOUR emotional well-being, help others &
-    support important science with MyMoodCoach!
-  </b>
-  <br /><br />
-  ${l://OptOutLink?d=Click here} to unsubscribe
+	<b>
+		Learn about your emotions, build YOUR emotional well-being, help others &
+		support important science with MyMoodCoach!
+	</b>
+	<br /><br />
+	${l://OptOutLink?d=Click here} to unsubscribe
 </div>
