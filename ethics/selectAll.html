@@ -8,14 +8,26 @@
 		};
 		var isAllSelected = false;
 		var selectBtn = document.querySelector("#selectBtn");
-
+		var checkboxes = document.querySelectorAll('input[type="checkbox"]');
 		selectBtn.textContent = selectText["${e://Field/Q_Language}"][0];
 
 		selectBtn.onclick = function () {
-			document
-				.querySelectorAll(".MultipleAnswer")
-				.forEach((node) => node.classList.toggle("q-checked"));
 			isAllSelected = !isAllSelected;
+			document.querySelectorAll(".MultipleAnswer").forEach((node, index) => {
+				if (isAllSelected) {
+					if (!node.classList.contains("q-checked")) {
+						node.classList.add("q-checked");
+						node.classList.add("q-focused");
+						checkboxes[index].click();
+					}
+				} else {
+					if (node.classList.contains("q-checked")) {
+						node.classList.remove("q-checked");
+						node.classList.remove("q-focused");
+						checkboxes[index].click();
+					}
+				}
+			});
 			isAllSelected
 				? (selectBtn.textContent = selectText["${e://Field/Q_Language}"][1])
 				: (selectBtn.textContent = selectText["${e://Field/Q_Language}"][0]);
