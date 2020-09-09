@@ -1,31 +1,44 @@
-<!-- <div id="fbpixel">
-    <!-- Facebook Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window,document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1400116296853298'); 
-    fbq('track', 'PageView');
-    </script>
-<!-- End Facebook Pixel Code -->
-</div> -->
+<!-- Facebook Pixel Code -->
 <script>
-    var elem = ["<script id='fbpixel'>"];
-    elem.push("!function(f,b,e,v,n,t,s)")
-    elem.push("{if(f.fbq)return;n=f.fbq=function(){n.callMethod?")
-    elem.push("n.callMethod.apply(n,arguments):n.queue.push(arguments)};")
-    elem.push("if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';")
-    elem.push("n.queue=[];t=b.createElement(e);t.async=!0;")
-    elem.push("t.src=v;s=b.getElementsByTagName(e)[0];")
-    elem.push("s.parentNode.insertBefore(t,s)}(window,document,'script',")
-    elem.push("'https://connect.facebook.net/en_US/fbevents.js');")
-    elem.push("fbq('init', '1400116296853298');")
-    elem.push('fbq("track", "PageView", {"testing":"testing"});')
-    elem = elem.join("");
-    jQuery("head").append(elem);
+	!(function (f, b, e, v, n, t, s) {
+		if (f.fbq) return;
+		n = f.fbq = function () {
+			n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+		};
+		if (!f._fbq) f._fbq = n;
+		n.push = n;
+		n.loaded = !0;
+		n.version = "2.0";
+		n.queue = [];
+		t = b.createElement(e);
+		t.async = !0;
+		t.src = v;
+		s = b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t, s);
+	})(
+		window,
+		document,
+		"script",
+		"https://connect.facebook.net/en_US/fbevents.js"
+	);
+	fbq("init", "1400116296853298");
+	fbq("track", "PageView");
+	fbq("trackCustom", "reachedEndpoint"); //TODO: send to Tim
+</script>
+<!-- End Facebook Pixel Code -->
+<!-- For Qualtrics:  -->
+<script>
+	var elem = ["<script id='fbpixel'>"];
+	elem.push("!function(f,b,e,v,n,t,s)");
+	elem.push("{if(f.fbq)return;n=f.fbq=function(){n.callMethod?");
+	elem.push("n.callMethod.apply(n,arguments):n.queue.push(arguments)};");
+	elem.push("if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';");
+	elem.push("n.queue=[];t=b.createElement(e);t.async=!0;");
+	elem.push("t.src=v;s=b.getElementsByTagName(e)[0];");
+	elem.push("s.parentNode.insertBefore(t,s)}(window,document,'script',");
+	elem.push("'https://connect.facebook.net/en_US/fbevents.js');");
+	elem.push("fbq('init', '1400116296853298');");
+	elem.push('fbq("track", "PageView", {"testing":"testing"});');
+	elem = elem.join("");
+	jQuery("head").append(elem);
 </script>

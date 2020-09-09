@@ -1,12 +1,18 @@
-fbq("trackCustom", "openedWix"); //fbq undefined in corvid
+fbq("trackCustom", "openedWix"); //TODO: fbq undefined in corvid
 
-fbq("trackCustom", "openedPrescreener");
-fbq("trackCustom", "excludedPrescreener", { reason: ""});
-fbq("trackCustom", "includedPrescreener");
+fbq("trackCustom", "openedPrescreener"); // first page
+fbq("trackCustom", "excludedPrescreener", { reason: "" }); //TODO:
+fbq("trackCustom", "includedPrescreener"); //completed email
+fbq("trackCustom", "parentalConsentNeeded"); //reached parent consent page
 
-fbq("trackCustom", "openedBaseline");
-fbq("trackCustom", "consented");
-fbq("trackCustom", "excludedBaseline", { reason: ""});
-fbq("trackCustom", "includedBaseline");
+fbq("trackCustom", "openedParent"); //first page 
+fbq("trackCustom", "parentConsented"); //completed contact details
 
-fbq("trackCustom", "reachedEndpoint");
+
+fbq("trackCustom", "openedBaseline"); //first page
+fbq("trackCustom", "consentedSurvey"); // completed consent a
+fbq("trackCustom", "excludedBaseline", { reason: ""}); //exclusion pages
+fbq("trackCustom", "includedBaseline"); //reached gad
+fbq("trackCustom", "consentedStudy"); //reached welcome page
+
+fbq("trackCustom", "reachedEndpoint"); //TODO: sent to tim
