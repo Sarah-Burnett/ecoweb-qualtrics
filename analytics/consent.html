@@ -8,3 +8,55 @@
 
 By clicking 'Accept all' or 'Get started', you agree to allow us to use cookies
 to help personalise content, tailor and measure ads.
+
+<!-- script because you kind of forgot about css -->
+<script>
+	var font = "avenir-lt-w01_35-light1475496,sans-serif";
+	var banner = new MutationObserver(function (mutations, me) {
+		var btns = document.querySelectorAll(".MWTAz");
+		var text = document.querySelector(".HzPhN");
+		if (btns && text) {
+			btns.forEach(function (btn) {
+				btn.style.fontFamily = font;
+			});
+			text.style.fontFamily = font;
+			btn[0].onClick = function () {
+				preferences.observe(document, {
+					childList: true,
+					subtree: true,
+				});
+			};
+			me.disconnect(); // stop observing
+			return;
+		}
+	});
+	var preferences = new MutationObserver(function (mutations, me) {
+		var h3 = document.querySelectorAll("._1091V section h3");
+		var p = document.querySelector("._1091V section p");
+		console.log(h3, p, font);
+		if (h3 && p) {
+			h3.forEach(function (elem) {
+				elem.style.fontFamily = font;
+			});
+			p.forEach(function (elem) {
+				elem.style.fontFamily = font;
+			});
+			document.querySelector("._2pofe").fontFamily = font;
+			me.disconnect(); // stop observing
+			return;
+		}
+	});
+	banner.observe(document, {
+		childList: true,
+		subtree: true,
+	});
+</script>
+
+<style>
+	._2svEM,
+	.MWTAz,
+	._2B-MR,
+	._3ywUA {
+		font-family: avenir-lt-w01_35-light1475496, sans-serif;
+	}
+</style>
