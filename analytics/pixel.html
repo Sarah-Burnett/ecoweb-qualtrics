@@ -1,9 +1,14 @@
+Pixel ID:
+Sarah: 1400116296853298
+Lexy: 1244193765621078
 <!-- Facebook Pixel Code -->
 <script>
 	!(function (f, b, e, v, n, t, s) {
 		if (f.fbq) return;
 		n = f.fbq = function () {
-			n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+			n.callMethod 
+			? n.callMethod.apply(n, arguments) 
+			: n.queue.push(arguments);
 		};
 		if (!f._fbq) f._fbq = n;
 		n.push = n;
@@ -21,9 +26,9 @@
 		"script",
 		"https://connect.facebook.net/en_US/fbevents.js"
 	);
-	fbq("init", "1400116296853298");
+	fbq("init", "1244193765621078");
 	fbq("track", "PageView");
-	fbq("trackCustom", "reachedEndpoint"); //TODO: send to Tim
+	fbq("trackCustom", "reachedEndpoint");
 </script>
 <!-- End Facebook Pixel Code -->
 <!-- For Qualtrics:  -->
@@ -37,7 +42,7 @@
 	elem.push("t.src=v;s=b.getElementsByTagName(e)[0];");
 	elem.push("s.parentNode.insertBefore(t,s)}(window,document,'script',");
 	elem.push("'https://connect.facebook.net/en_US/fbevents.js');");
-	elem.push("fbq('init', '1400116296853298');");
+	elem.push("fbq('init', '1244193765621078');");
 	elem.push('fbq("track", "PageView", {"testing":"testing"});');
 	elem = elem.join("");
 	jQuery("head").append(elem);
