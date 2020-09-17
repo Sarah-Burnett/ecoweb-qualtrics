@@ -1,0 +1,53 @@
+<!-- mymoodcoach - source -->
+<script>
+	window.ga =
+		window.ga ||
+		function () {
+			(ga.q = ga.q || []).push(arguments);
+		};
+	ga.l = +new Date();
+	ga("create", "UA-175362414-1", "auto");
+	ga("send", "pageview");
+	ga("require", "linker");
+	ga("linker:autoLink", ["exeterctu.fra1.qualtrics.com"], false, true);
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+<!-- prescreener -->
+<script>
+	window.ga =
+		window.ga ||
+		function () {
+			(ga.q = ga.q || []).push(arguments);
+		};
+	ga.l = +new Date();
+	ga("create", "UA-175362414-1", "auto", {
+		allowLinker: true,
+	});
+	ga("send", "pageview");
+	ga(function (tracker) {
+		var clientId = tracker.get("clientId");
+		Qualtrics.SurveyEngine.setEmbeddedData("gaClientId", clientId);
+	});
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+<!-- baseline- source and destination -->
+<script>
+	window.ga =
+		window.ga ||
+		function () {
+			(ga.q = ga.q || []).push(arguments);
+		};
+	ga.l = +new Date();
+	function getClientIdFromUrl() {
+		var searchParams = new URLSearchParams(location.search);
+		if (searchParams.get("clientId")) return searchParams.get("clientId");
+		else return undefined;
+	}
+	ga("create", "UA-175362414-1", "auto", {
+		clientId: getClientIdFromUrl(),
+	});
+	ga("send", "pageview");
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
