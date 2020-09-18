@@ -5,6 +5,10 @@ Custom code implemented into [Qualtrics](https://exeterctu.eu.qualtrics.com/Q/My
 
 Full information about the folder contents below
 
+analytics 
+-------------
+Google analytics and facebook pixel code for Wix and Qualtrics (and sent to CTU for endpoint)
+
 continuealert
 -------------
 Red error alert on final pages to remind participants to click through to the end  
@@ -31,13 +35,13 @@ Where: date of birth
 
 emails
 ------
-HTML for all emails and reminders
+HTML for all emails and reminders. Current HTML emails are separated by language.
 
 Where: actions and library
 
 ethics
 -------
-Markup and styling for information sheet and data protection 'containers'
+Markup and styling for information sheet and data protection 'containers'. <br> Also code for select all buttons
 
 Surveys: prescreener, parental consent, baseline
 
@@ -65,6 +69,10 @@ Surveys: baseline, follow up p2
 
 Where: gert
 
+images
+-----------
+Images in relevant folders e.g. emails
+
 prescreener
 -----------
 HTML for mental health info and help with bullet points and hyperlinks. Also includes folder with the HTML for the final pages for each exclusion (e.g. age, country)
@@ -76,6 +84,12 @@ progressbar which adds one for every 'page' to a maximum of 100 except for addit
 Surveys: baseline, follow ups
 
 Where: header in look and feel, extra questions (e.g. lidas)
+
+telnoplaceholder
+----
+NL guide for telephone number entry - title now not placeholder (not mob friendly)
+
+Surveys: parental consent, baseline
 
 urls
 ----
