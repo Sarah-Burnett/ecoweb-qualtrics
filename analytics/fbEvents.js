@@ -1,16 +1,21 @@
 //FACEBOOK: improve ads
+fbq("trackCustom", "WixOpened");
+fbq("trackCustom", "WixGetStarted");
 
-const { gainsboro } = require("color-name");
+fbq("trackCustom", "OpenedPrescreener");
+fbq("trackCustom", "Excluded", { reason: "" }); //on exclusion page (ps / bs)
+fbq("trackCustom", "ParentConsentNeeded");
+fbq("trackCustom", "PrescreenerCompleted");
 
-fbq("trackCustom", "parentConsented"); //completed parental consent
+fbq("trackCustom", "ParentOpened")
+fbq("trackCustom", "ParentConsented"); //completed parental consent
 
-fbq("trackCustom", "participantExcluded", { reason: "" }); //on exclusion page (ps / bs)
-fbq("trackCustom", "participantIncluded"); //completed baseline
+fbq("trackCustom", "OpenedBaseline")
+fbq("trackCustom", "ConsentedSurvey");
+fbq("trackCustom", "ConsentedStudy");
+fbq("trackCustom", "Excluded", { reason: "" }); //on exclusion page (ps / bs)
+
+fbq("trackCustom", "BaselineCompleted"); //completed baseline
+
 
 fbq("trackCustom", "reachedEndpoint"); //all ctu endpoints
-
-
-
-//GOOGLE ANALYTICS - track 
-//TODO: add in events for google to track
-ga("")
