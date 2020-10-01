@@ -13,21 +13,23 @@
 
 		selectBtn.onclick = function () {
 			isAllSelected = !isAllSelected;
-			document.querySelectorAll(".MultipleAnswer").forEach((node, index) => {
+			const nodes = document.querySelectorAll(".MultipleAnswer");
+			for (let i = 0; i < nodes.length; i++) {
+				const node = nodes[i];
 				if (isAllSelected) {
 					if (!node.classList.contains("q-checked")) {
 						node.classList.add("q-checked");
 						node.classList.add("q-focused");
-						checkboxes[index].click();
+						checkboxes[i].click();
 					}
 				} else {
 					if (node.classList.contains("q-checked")) {
 						node.classList.remove("q-checked");
 						node.classList.remove("q-focused");
-						checkboxes[index].click();
+						checkboxes[i].click();
 					}
 				}
-			});
+			}
 			isAllSelected
 				? (selectBtn.textContent = selectText["${e://Field/Q_Language}"][1])
 				: (selectBtn.textContent = selectText["${e://Field/Q_Language}"][0]);
