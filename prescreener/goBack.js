@@ -1,0 +1,10 @@
+// need to enable back button in options
+// need to add styling for buttons - display: none for #PreviousButton and opacity:1 for #NextButton:disabled
+
+Qualtrics.SurveyEngine.addOnload(function () {
+	var that = this;
+	this.disableNextButton();
+	document.querySelector("#Buttons").onclick = function () {
+		that.clickPreviousButton();
+	};
+});
