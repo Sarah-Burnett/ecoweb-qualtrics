@@ -8,12 +8,25 @@ ga(
 	[eventValue]
 );
 
-//started
-ga("send", "event", "surveyStart", "start");
+ga("send", "event", "WixOpened", "view");
+ga("send", "event", "WixGetStarted", "action");
 
-//included
-ga("send", "event", "surveyIncluded", "include", "included");
+ga("send", "event", "PrescreenerOpened", "start");
+ga("send", "event", "PrescreenerCompleted", "end");
 
-//excluded
-ga("send", "event", "surveyExcluded", "exclude", "[reasonforExclusion]");
+ga("send", "event", "ParentConsentNeeded", "end");
+ga("send", "event", "ParentOpened", "start");
+ga("send", "event", "ParentConsented", "end");
+
+ga("send", "event", "BaselineOpened", "start");
+ga("send", "event", "BaselineCompleted", "include");
+
+ga("send", "event", "Included", "include");
+ga("send", "event", "Excluded", "exclude", "[reasonforExclusion]");
 // reasons for exclusion: age, country, bipolar, past dep, curr dep, therapy, risk
+
+//goals:
+[WixOpened] //WixOpened event
+[WixConversion] //WixGetStarted event
+[QualtricsStarted] //PrescreenerOpenend event
+[QualtricsCompleted] //BaselineCompleted event
