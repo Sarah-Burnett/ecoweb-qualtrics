@@ -1,0 +1,75 @@
+<!-- New email layout with logo banner etc. -->
+<!-- Copy and paste this into 'source' on the email -->
+<!-- Change the content inside the <div class="content" style="font-family:Arial, sans-serif; font-size:12px;"> tags -->
+<!-- Text is in the translation template at the bottom of the survey sheets -->
+<style>
+  div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+  p {
+    line-height: 1.2;
+    margin: 2vh 4vw;
+  }
+  .content {
+    padding: 1vh 0;
+  }
+  .logo,
+  .motivation {
+    text-align: center;
+  }
+  .logo img,
+  .motivation img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+   .signature {
+        margin-left: 4vw;
+    }
+  .footer {
+    background: #f6f6f6;
+    padding: 4vh;
+    font-size: smaller;
+    color: #808080;
+    text-align: center;
+  }
+</style>
+<div class="logo" style="text-align: center">
+  <img
+    src="https://exeterctu.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_eXyHnzyZ9IcAo73"
+    alt=""
+    style="max-width: 100%"
+  />
+</div>
+<div class="content" style="font-family:Arial, sans-serif; font-size:12px;">
+  <p>Liebe Eltern bzw. Erziehungsberechtigte,</p>
+    <p>Dies ist eine ERINNERUNG, dass Ihr Kind an der Teilnahme an unserer Studie interessiert ist, aber die Zustimmung der Eltern benötigt.</p>
+    <p><strong>Bitte folgen Sie diesem Link, um mehr über die Studie zu erfahren und Ihre Einwilligung zu geben.</strong><br>${l://SurveyLink?d=Klicken Sie hier}</p>
+    <p>Oder kopieren Sie die untenstehende URL und fügen Sie diese in Ihren Internetbrowser ein:</br> ${l://SurveyURL} </p>
+    <p class="motivation">
+      <img
+        src="https://exeterctu.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_3lwhipuyWKYvIrP"
+        width="500"
+        alt=""
+        style="max-width: 100%"
+      />
+	  </p>
+    <p>Mit freundlichen Grüßen,</p>
+	<img
+		src="https://exeterctu.eu.qualtrics.com/ControlPanel/Graphic.php?IM=IM_0rzRjIUnQaZTPV3"
+alt=""		class="signature"
+  />  
+  <p>
+    Maria Voß<br />
+    Das ECoWeB Team <br />
+    Ludwig-Maximilians-Universität München<br />
+    Telefon <a href="tel:089-2180 5619">089-2180 5619</a>, E-Mail
+    <a href="mailto:mymoodcoach@psy.lmu.de">mymoodcoach@psy.lmu.de</a><br />
+  </p>
+</div>
+<div class="footer" style="background: #f6f6f6; padding: 2vh; font-size: 10px; color: #808080;	text-align: center; font-family: Arial, Helvetica, sans-serif">
+  <b>
+    Vielen Dank für Ihr Interesse an unserer Studie.
+  </b>
+  <br /><br />
+  Zum Abmelden der Benachrichtigungen ${l://OptOutLink?d=hier klicken}</div>
