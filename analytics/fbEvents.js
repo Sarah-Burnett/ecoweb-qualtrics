@@ -1,4 +1,7 @@
 //FACEBOOK: improve ads
+fbq("trackCustom", "WixOpened"); // TODO: not working
+fbq("trackCustom", "WixConversion"); //TODO: need to add 
+
 fbq("trackCustom", "PrescreenerOpened");
 fbq("trackCustom", "PrescreenerCompleted");
 
