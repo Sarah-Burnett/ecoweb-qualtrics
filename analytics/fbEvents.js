@@ -1,4 +1,7 @@
 //FACEBOOK: improve ads
+fbq("trackCustom", "WixOpened"); 
+fbq("trackCustom", "WixConversion");
+
 fbq("trackCustom", "PrescreenerOpened");
 fbq("trackCustom", "PrescreenerCompleted");
 
