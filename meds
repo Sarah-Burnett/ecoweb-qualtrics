@@ -1,0 +1,34 @@
+original nodelist length 9
+Citalopram 0
+Fluoextine 1
+Ritalin 2
+Propanalol 3
+Escitalopram 4
+Venlafaxine 5
+Paroxetine 6
+Duloxetine 7
+Other 8
+
+add but hide from en, de, es
+i >= 9
+Sertraline 9
+Amitriptyline 10
+Nortriptyline 11
+Mirtazapine 12
+Trazadone 13
+Bupropion 14
+
+
+hide from nl
+i = 2, 3, 4, 7, 8
+
+Citalopram 0
+Fluoxetine 1
+Venlafaxine 5
+Paroxetine 6
+Sertraline 9
+Amitriptyline 10
+Nortriptyline 11
+Mirtazapine 12
+Trazadone 13
+Bupropion 14
