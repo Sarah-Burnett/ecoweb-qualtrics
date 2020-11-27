@@ -43,7 +43,6 @@
 	function getClientIdFromUrl() {
 		var searchParams = new URLSearchParams(location.search);
 		if (searchParams.get("clientId")) return searchParams.get("clientId");
-		else return undefined;
 	}
 	ga("create", "UA-175362414-1", "auto", {
 		clientId: getClientIdFromUrl(),
